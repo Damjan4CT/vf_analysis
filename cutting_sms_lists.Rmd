@@ -108,5 +108,20 @@ assignment_table_with_totals <- bind_rows(counts, col_sums)
 assignment_table_with_totals %>% head(13)
 
 lower_tiers %>% group_by(message) %>% summarise(avg_age = mean(age), med_age = median(age))
+```
+
+
+# Create CSVs
+
+```{r}
+#dir.create("lower_tier_csvs", showWarnings = FALSE)
+
+
+lower_tiers %>%
+  # Group by the specified column
+  group_by(message) %>%
+  # For each group, write the data to a CSV file
+  group_walk(~write_csv(x = .x, file = paste0("lower_tier_csvs/", first(.y$message), ".csv")))
 
 ```
+
