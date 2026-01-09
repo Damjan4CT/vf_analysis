@@ -1,0 +1,140 @@
+---
+title: "clean_voter_file"
+output: html_document
+date: "2025-12-24"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+#library(cwi) 
+if (require(sf)) {
+  sf::sf_use_s2(FALSE)
+}
+library(RSQLite)
+library(DBI)
+library(leaflet)
+library(leaflet.extras2)
+library(htmlwidgets)
+library(tidygeocoder)
+library(tidyverse)
+library(data.table)
+library(purrr)
+library(leafgl)
+library(lubridate)
+library(reactable)
+library(flextable)
+library(magrittr)
+```
+
+```{r}
+setwd("C:/Users/Ruairi/Documents/Coding Projects 2025/ct04_testing")
+conn <- dbConnect(RSQLite::SQLite(), "C:/Users/Ruairi/Downloads/voters.db")
+df_voters <- dbGetQuery(conn, "SELECT * FROM voters")
+df_vh <- dbGetQuery(conn, "select * from voter_history")
+```
+
+```{r}
+# Clean up messy town names
+town_id_crosswalk <- df_voters %>% 
+  group_by(town_id, town_name) %>% 
+  summarise(count = n(), .groups = "drop") %>% 
+  group_by(town_id) %>%
+  filter(count == max(count) & count > 1) 
+
+df_voters_clean <- left_join(df_voters %>% rename(voterfile_town_name = town_name), 
+                       town_id_crosswalk %>% select(town_id, town_name), 
+                       by = 'town_id')
+```
+
+```{r}
+## Clean and join vote history
+
+# Create dataset of one row per voter with all vote history
+vh_by_voter <- df_vh %>% 
+  filter(voter_id != '003772487') %>% #Remove one weird voter_id
+  group_by(voter_id, election_date) %>% 
+  summarise(n=n()) %>% 
+  arrange(voter_id, desc(election_date)) %>% 
+  ungroup() %>% 
+  group_by(voter_id) %>% 
+  mutate(election_num = paste0('e', as.character(as.integer(rank(desc(election_date)))))) %>% 
+  pivot_wider(id_cols = voter_id, names_from = election_num, values_from = election_date)
+
+# Most recent election for voter in vf
+vh_by_voter$most_recent_election <- vh_by_voter$e1 
+
+# First election for voter in vf
+vh_by_voter$oldest_election_on_file <- do.call(pmin, c(vh_by_voter[grepl("^e", names(vh_by_voter))], na.rm = TRUE))
+
+# Total number of elections on file for each voter
+vh_by_voter$non_na_count <- rowSums(!is.na(vh_by_voter[grepl("^e", names(vh_by_voter))]))
+
+# Looking at 5 most recent elections to determine voter frequency 
+most_recent_5_elections <- names(vh_by_voter)[grepl("^e[1-5]$", names(vh_by_voter))] # Grab column names for 5 most recent elections
+
+years <- sapply(vh_by_voter[most_recent_5_elections], function(x) as.integer(substr(x,1,4)))
+vh_by_voter$odd_election <- as.integer(rowSums(years > 2019 & years %% 2 == 1, na.rm = TRUE) > 0)
+
+months <- sapply(vh_by_voter[most_recent_5_elections], function(x) as.integer(substr(x,6,7)))
+vh_by_voter$non_general_election <- as.integer(rowSums(years > 2019 & months != 11, na.rm = TRUE) > 0)
+
+vh_by_voter <- vh_by_voter %>% mutate(frequent_voter = ifelse(sum(odd_election, non_general_election) > 0, 1, 0 ))
+
+
+## Joining Vote History with Voter File
+
+# 56,670 voter file records (12%) do not appear in the vote history table
+df_voters_with_history <- left_join(df_voters_clean, 
+                                    vh_by_voter, #%>% select(voter_id, most_recent_election, odd_election, non_general_election, frequent_voter), 
+                                    by = "voter_id")
+
+
+# Construct "Likely Signer" Logic 
+df_voters_with_history <- df_voters_with_history %>% 
+  mutate(age = 2025 - as.integer(substring(date_of_birth, 1,4))) %>%
+  mutate(likely_signer = ifelse((status == 'A' & party_code == 'D' & frequent_voter == 1), 1, 0)) %>%
+  mutate(likely_signer = ifelse(is.na(likely_signer), 0, likely_signer)) %>% # Redefines NAs as 0s for likely_signer
+  mutate(active_dem = ifelse(status == 'A' & party_code == 'D', 1, 0))
+
+write.csv(df_voters_with_history, 'clean_vf_with_vh.csv')
+```
+
+# Old Code for Freq. voter Logic
+
+```{r}
+#Previously used this code to find the odd/non-general elections for folks
+
+# vh_by_voter_enhanced <- vh_by_voter %>% mutate(odd_election = ifelse(
+#                                (substring(e1,1,4) > '2019' & as.integer(substring(e1,1,4)) %% 2 == 1) |
+#                                (substring(e2,1,4) > '2019' & as.integer(substring(e2,1,4)) %% 2 == 1) |
+#                                (substring(e3,1,4) > '2019' & as.integer(substring(e3,1,4)) %% 2 == 1) |
+#                                (substring(e4,1,4) > '2019' & as.integer(substring(e4,1,4)) %% 2 == 1) |
+#                                (substring(e5,1,4) > '2019' & as.integer(substring(e5,1,4)) %% 2 == 1),
+#                                1, 0
+#                                )
+#                        ) %>%
+#                 mutate(non_general_election = ifelse(
+#                                (substring(e1,1,4) > '2019' & (substring(e1,6,7)) != '11') |
+#                                (substring(e2,1,4) > '2019' & (substring(e2,6,7)) != '11') |
+#                                (substring(e3,1,4) > '2019' & (substring(e3,6,7)) != '11') |
+#                                (substring(e4,1,4) > '2019' & (substring(e4,6,7)) != '11') |
+#                                (substring(e5,1,4) > '2019' & (substring(e5,6,7)) != '11'),
+#                                1, 0
+#                                )
+#                          ) %>%
+#                 mutate(frequent_voter = ifelse(sum(odd_election, non_general_election) > 0, 1, 0 ))
+```
+
+# Topline Stats from Clean DF
+
+```{r}
+prop.table(table(df_voters_with_history$likely_signer))
+prop.table(table(df_voters_with_history %>% filter(status == 'A' & party_code == 'D' ) %>% pull(likely_signer)))
+df_voters_with_history %>% filter(status == 'A' & party_code == 'D' ) %>% nrow()
+```
+

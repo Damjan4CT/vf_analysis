@@ -1,0 +1,574 @@
+---
+title: "vote_history_analysis"
+output:
+  pdf_document: default
+  html_document: default
+date: "2025-11-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, warning = FALSE, message = FALSE}
+library(dplyr)
+library(ggplot2)
+#library(cwi) 
+if (require(sf)) {
+  sf::sf_use_s2(FALSE)
+}
+library(RSQLite)
+library(DBI)
+library(leaflet)
+library(leaflet.extras2)
+library(htmlwidgets)
+library(tidygeocoder)
+library(tidyverse)
+library(data.table)
+library(purrr)
+library(leafgl)
+library(lubridate)
+library(reactable)
+library(flextable)
+library(magrittr)
+library(gt)
+library(htmltools)
+```
+
+```{r}
+# Grab the data from sqllite connections
+# setwd("C:/Users/Ruairi/Documents/Coding Projects 2025/ct04_testing")
+# conn <- dbConnect(RSQLite::SQLite(), "C:/Users/Ruairi/Downloads/voters.db")
+# df_voters <- dbGetQuery(conn, "SELECT * FROM voters")
+# df_vh <- dbGetQuery(conn, "select * from voter_history")
+
+df_voters_with_history <- read.csv('clean_vf_with_vh.csv')
+```
+
+### What are the best town to target?
+
+```{r town_aggregation}
+town_agg <- df_voters_with_history %>% 
+  group_by(town_name) %>%
+  mutate(phone_avail = ifelse(phone != '',1,0),
+         active_dem_phone_avail = ifelse(phone != '' & active_dem == 1,1,0),
+         likely_signers_phone_avail = ifelse(phone != '' & likely_signer == 1,1,0)) %>% 
+  summarise(vf_records = n(),
+            active_dems = sum(active_dem),
+            likely_signers = sum(likely_signer),
+            phones = sum(phone_avail),
+            ad_phones = sum(active_dem_phone_avail),
+            ls_phones = sum(likely_signers_phone_avail)) %>%
+  mutate(ratio_likely_signers_to_act_dems = round(likely_signers/active_dems, 2),
+         p_voters_active_dems = round(100*active_dems/vf_records,0),
+         p_voters_likely_signers = round(100*likely_signers/vf_records,0),
+         p_voters_phones = round(phones/vf_records,2),
+         p_ad_phones = round(ad_phones/active_dems,2),
+         p_ls_phones = round(ls_phones/active_dems, 2)) %>%
+  #get rid of incorrect spelling, neighborhoods, etc 
+  filter(vf_records > 400) %>%
+  mutate(Tier = ifelse(likely_signers > 6000, 1, ifelse(likely_signers > 1500, 2, 3)))
+```
+
+# HTML Table of Aggregated Town Counts
+
+```{r}
+# Making a clean table
+tab_town <- town_agg %>% 
+  arrange(desc(likely_signers)) %>% 
+  rename(Town = town_name, Total_Records = vf_records) %>%
+  mutate(Total_Records = format(Total_Records, big.mark = ",", scientific = FALSE),
+         Active_Dems = paste0(format(active_dems, big.mark = ",", scientific = FALSE), ' ', '(', p_voters_active_dems ,'%)'),
+         Likely_Signers = paste0(format(likely_signers, big.mark = ",", scientific = FALSE), ' ', '(', p_voters_likely_signers ,'%)'), 
+         Ratio_LS_to_AD = ratio_likely_signers_to_act_dems
+         ) %>% select(Town, Total_Records, Active_Dems, Likely_Signers, Tier, Ratio_LS_to_AD)
+
+tab_town_styled <- reactable(tab_town,
+          striped = TRUE,
+          defaultPageSize = 25,
+          rowStyle = function(index) {
+            # Get the value from the 'cyl' column for the current row
+            x <- tab_town[index, "Tier"]
+            
+            # Apply a background color based on the condition
+            if (x == 1) {
+              list(background = "#ccffcc") # Light green for 4 cyl
+            } else if (x == 2) {
+              list(background = "#cce5ff") # Light blue for 6 cyl
+            } else if (x == 3) {
+              list(background = "#ffcccc") # Light red for 8 cyl
+            }
+          }
+        )
+
+saveWidget(tab_town_styled, "dems_by_town.html", selfcontained = TRUE)
+
+town_agg %>% 
+  group_by(Tier) %>% 
+  summarise(Active_Dems = format(round(sum(active_dems)/1000, 0)*1000, big.mark=','), 
+            High_Propensity = format(round(sum(likely_signers)/1000,0)*1000, big.mark = ","))
+
+left_join(df_voters_with_history, town_agg %>% select(town_name, Tier), by='town_name') %>% 
+  mutate(Active_Dem_w_Phone =  ifelse(active_dem == 1 & phone != '', 1, 0)) %>%
+  group_by(Tier) %>% 
+  summarise(Active_Dems = format(round(sum(active_dem)/1000, 0)*1000, big.mark=','),
+            High_Propensity = format(round(sum(likely_signer)/1000,0)*1000, big.mark = ","),
+            Active_Dem_Phones = format(round(sum(Active_Dem_w_Phone)/1000, 0)*1000, big.mark=','),
+            med_age = median(age, na.rm=TRUE), 
+            sd_age = sd(age, na.rm=TRUE))
+```
+
+### Messaging Campaign
+
+```{r}
+## Message testing
+df_wide <-left_join(
+  df_voters_with_history %>% 
+    mutate(age_bracket = cut(age, 
+                             breaks = c(18, 35, 50, 65, Inf), 
+                             labels = c("18-34", "35-49", "50-64", "65+"),
+                             right = FALSE)) 
+  , town_agg %>% select(town_name, Tier)) %>%
+  filter(party_code %in% c('D') & status == 'A' & phone != '') %>%
+  group_by(Tier, age_bracket, gender, likely_signer) %>% 
+  summarise(n = n()) %>%
+  filter(Tier == 3) %>%
+  pivot_wider(
+    names_from  = c(gender, likely_signer),
+    values_from = n,
+    values_fill = 0
+  )
+
+tab3 <- df_wide %>%
+  ungroup() %>%
+  filter(!is.na(age_bracket)) %>%
+  mutate(across(contains('_'), ~ format(.x, big.mark = "," ))) %>%
+  gt(rowname_col = "age_bracket") %>%
+  cols_hide(columns = Tier) %>%
+
+  # Top-level spanners (Gender)
+  tab_spanner(
+    label = "Male",
+    columns = c(M_1, M_0)
+  ) %>%
+  tab_spanner(
+    label = "Female",
+    columns = c(F_1, F_0)
+  ) %>%
+  tab_spanner(
+    label = "Unknown",
+    columns = c(U_1, U_0)
+  ) %>%
+
+  # Second-level labels (Likely)
+  cols_label(
+    M_1    = "Yes",
+    M_0     = "No",
+    F_1  = "Yes",
+    F_0   = "No",
+    U_1 = "Yes",
+    U_0 = "No"
+  ) %>%
+
+  tab_header(
+    title = md("**Tier 3**"),
+    subtitle = "Counts by Age, Gender, and Likely Signer Status"
+  ) %>%
+  # Add border
+  cols_align("center") %>%
+  opt_all_caps()%>% 
+  tab_style(
+    style = cell_borders(sides = "right", weight = px(1)),
+    locations = cells_body(columns = c(Tier, F_0, M_0)) 
+    ) #%>%
+  # Add Heatmap
+  # data_color(
+  #   columns = where(is.numeric),
+  #   colors = scales::col_numeric(
+  #   palette = c("#f7fbff", "#2171b5"),
+  #   domain = NULL
+  #   )
+  # )
+
+
+browsable_html <- browsable(
+  tagList(
+    tags$div(
+      style = "display:flex; gap:24px;",
+      lapply(
+        list(tab1, tab2, tab3),
+        function(tbl) HTML(as_raw_html(tbl))
+      )
+    )
+  )
+)
+
+save_html(browsable_html, "tiers_side_by_side.html")
+
+```
+
+```{r}
+# SCRUBBED PHONES FOR ACTIVE DEMS
+scrubbed_phones_active_dems <- read.csv("scrubbed_numbers 2026-01-03 09-24-35.csv")
+scrubbed_phones_active_dems$phone_number <- as.character(scrubbed_phones$phone_number)
+
+n_records_with_phone <- as.numeric(table((df_voters_with_history$phone == ''))["FALSE"])
+n_records_sharing_phone <- df_voters_with_history %>% group_by(phone) %>% summarise(n=n()) %>% arrange(desc(n)) %>% filter(n > 1) %>% nrow()  
+n_unique_phones <- length(unique(df_voters_with_history$phone))
+# 309409 records with a phone number 
+# 29453 phone numbers assigned to more than one record 
+# 274824 unique phone numbers 
+# ~10% of phone numbers are shared by more than one record
+
+table(scrubbed_phones$phone_line_type)
+
+vf_active_dems_good_phones <- left_join(df_voters_with_history, scrubbed_phones_active_dems, join_by(phone == phone_number)) %>% filter(!is.na(id.y)) %>%
+  filter(fake_number != 'YES') %>%
+  filter(phone_line_type == 'CELL PHONE') %>%
+  filter(party_code %in% c('D') & status == 'A')
+
+left_join(vf_active_dems_good_phones %>% mutate(age_bracket = cut(age, 
+                                                 breaks = c(18, 35, 50, 65, Inf), 
+                                                 labels = c("18-34", "35-49", "50-64", "65+"),
+                                                 right = FALSE)), 
+          town_agg %>% select(town_name, Tier)) %>% group_by(Tier) %>% summarise(n=n())
+
+vf_active_dems_good_phones %>% 
+  filter(phone %in% c(vf_active_dems_good_phones %>% group_by(phone) %>% summarise(n=n()) %>% filter(n > 1) %>% pull(phone))) %>%
+  arrange(phone) %>%
+  select(first_name, last_name, town_name, poll_place_name, phone)
+  
+
+w <- left_join(
+  vf_active_dems_good_phones %>% 
+    mutate(age_bracket = cut(age, 
+                             breaks = c(18, 35, 50, 65, Inf), 
+                             labels = c("18-34", "35-49", "50-64", "65+"),
+                             right = FALSE)) 
+  , town_agg %>% select(town_name, Tier)) %>%
+  filter(party_code %in% c('D') & status == 'A' & phone != '') %>%
+  group_by(Tier, age_bracket, gender, likely_signer) %>% 
+  summarise(n = n()) %>%
+  pivot_wider(
+    names_from  = c(gender, likely_signer),
+    values_from = n,
+    values_fill = 0
+  )
+
+x <- w %>%
+  ungroup() %>%
+  filter(!is.na(age_bracket)) %>%
+  mutate(across(contains('_'), ~ format(.x, big.mark = "," ))) %>%
+  gt(rowname_col = "age_bracket") %>%
+
+  # Top-level spanners (Gender)
+  tab_spanner(
+    label = "Male",
+    columns = c(M_1, M_0)
+  ) %>%
+  tab_spanner(
+    label = "Female",
+    columns = c(F_1, F_0)
+  ) %>%
+  tab_spanner(
+    label = "Unknown",
+    columns = c(U_1, U_0)
+  ) %>%
+
+  # Second-level labels (Likely)
+  cols_label(
+    M_1    = "Yes",
+    M_0     = "No",
+    F_1  = "Yes",
+    F_0   = "No",
+    U_1 = "Yes",
+    U_0 = "No"
+  ) %>%
+
+  tab_header(
+    title = md("**Active Dems with Good Phones**"),
+    subtitle = "Counts by Age, Tier, Gender, and Likely Signer Status"
+  ) %>%
+  # Add border
+  cols_align("center") %>%
+  opt_all_caps()%>% 
+  tab_style(
+    style = cell_borders(sides = "right", weight = px(1)),
+    locations = cells_body(columns = c(Tier, F_0, M_0)) 
+    )
+
+save_html(x, "active_dems_with_good_phones_crosstabs.html")
+
+```
+
+
+
+
+### Likely Signers: Demographics and Distributions?
+
+```{r}
+# Check Age Distribution
+df_voters_with_history %>%
+  filter(!is.na(age) & age < 100) %>%
+  ggplot(aes(age, fill = as.factor(likely_signer))) +
+    #geom_density(position = "identity", alpha = 0.5) +
+    geom_histogram(position = "identity", alpha = 0.5, binwidth = 5) +
+    scale_fill_brewer(palette = "Set1") +
+    theme_minimal() +
+    labs(x = "Age", fill = "Likely Signer", y = "Count") +
+    ggtitle("Age Distributions: Likely Signers vs. All Other")
+    #theme_bw() or theme_grey()
+
+# Check Town Distribution
+df_voters_with_history %>%
+  group_by(town_name, likely_signer) %>%
+  summarise(n = n(), .groups="drop") %>%
+  filter(n > 100 & town_name != '') %>%
+  group_by(town_name) %>%
+  mutate(town_pop = sum(n)) %>% 
+  ungroup() %>%
+  mutate(perc = paste0(round(100*n/town_pop, 0),'%')) %>%
+  ggplot() +
+    geom_bar(aes(y = reorder(town_name, n), x = n, fill = as.factor(likely_signer))
+             , stat = "identity"
+             , position = position_dodge2(reverse=TRUE)) +
+    geom_text(data = . %>% filter(likely_signer == 1),   # <- only this category gets labels
+              aes(
+                y = reorder(town_name, n),
+                x = 0,
+                label = perc
+              ),
+              hjust = 1.05,
+              size = 4) +
+    theme_minimal() +
+    labs(x = "Town", fill = "Likely Signer", y = "Count") + 
+    ggtitle("Likely Signers by Town")
+  
+overall_town_pops <- df_voters_with_history %>%
+  group_by(town_name) %>%
+  summarise(n = n()) %>%
+  filter(n> 400) %>%
+  ggplot(aes(y=reorder(town_name, n), x=n)) +
+  geom_bar(stat = 'identity', position = position_dodge2(reverse=TRUE), fill = 'lightblue') +
+  geom_text(aes(y = reorder(town_name, n), x = 0, label = n), color = 'black') +
+  ggtitle('Overall Town Populations')
+  
+  # Looking at proportion of different populations across towns (likely_u35, u_35, and overall_pop)
+# likely_signers_u35 <-  df_voters_with_history %>% filter(likely_signer == 1) %>% pull(town_name) %>% table() %>% prop.table() %>% round(2) %>% data.frame() %>% rename(., town = '.', perc_likely_u35 = Freq) 
+# left_join(
+#   left_join(
+#     likely_signers_u35,
+#     df_voters_with_history %>% 
+#       filter(age <= 35) %>% 
+#       pull(town_name) %>% table() %>% 
+#       prop.table() %>% round(2) %>%
+#       data.frame() %>% 
+#       rename(., town = '.', perc_u35 = Freq)
+#     , by = 'town'),
+#   df_voters_with_history %>% 
+#     pull(town_name) %>% 
+#     table() %>% prop.table() %>% 
+#     round(2) %>% data.frame() %>% 
+#     rename(., town = '.', perc = Freq) %>% filter(perc > 0.00),
+#   by = 'town'
+#   ) %>% arrange(desc(perc_likely_u35))
+```
+
+
+
+
+
+
+
+
+## Key to converting addresses to lat/long
+
+```{r}
+# Turn address into lat/lon with tinygeocoder
+# Do this with out "likely signer" universe.
+df_adds_to_convert <- df_voters_with_history  %>% 
+  filter(likely_signer == 1) %>% 
+  mutate(full_address = paste(address_number, ' ', street_name, ' ', town_name, ', ', state, ' ', zip5 , sep = ''))
+  
+batch_size <- 500
+batches <- split(df_adds_to_convert, ceiling(seq_len(nrow(df_adds_to_convert)) / batch_size))
+
+results <- map_dfr(batches, ~{
+  Sys.sleep(0.2)        # optional
+ tidygeocoder::geocode(
+      .x,      
+      address = full_address,
+      method = "census",  # OSM: Uses OpenStreetMap's Nominatim API, Census: Good for well-formatted, U.S. addresses #ArcGIS
+      # full_results = TRUE # Gives confidence 0-100
+    ) %>%
+    rename(lat_census = lat, long_census = long) 
+})
+
+# How many of our lat/long coordinates came out of the API as N/A
+prop.table(table(is.na(results$lat_census)))
+
+```
+
+When looking at our definition of likely voters, we find that `r nrow(df_adds_to_convert) / df_voters %>% filter(party_code == 'D') %>% nrow()`%
+of Democrats in CT-03 meet our definition and `nrow(df_adds_to_convert) / df_voters %>% nrow()`% of all records in the voterfile meet our address. 
+
+```{r}
+# Let's try to keep this to points contained within the district
+# Option 1: Use the CT-03 Polygon as a border
+# Option 2: update the tidygeocoder code to include "full_results = TRUE" to get confidence of the coordinates
+# Option 3: identify outliers that are farther than X miles from the centroid
+# Option 4: Identify the general box that CT-03 lies in and remove values that are beyond
+# Option 5: I found that 99%+ of points are below lat: 41.6, could just use that as a hardcoded filter
+# Either way, I would say returning lat/long to NA is preferable to removing the row. 
+# Could do this immediately after the batching and then RERUN the batch with OSM or another method to see if those are better for the outliers. 
+
+df_map <- st_transform(df_map, 3857) # Have to make this transformation before joining with the congressional map (needs to be planar or something)
+congressional_bound <- st_read("C:/Users/Ruairi/Documents/Coding Projects 2025/ct04_testing/tl_2020_09_cd118")
+congressional_bound_003 <- congressional_bound[congressional_bound$CD118FP == '03',] # Grab CT-03 boundaries
+congressional_bound_003 <- st_transform(congressional_bound_003, 3857) # Have to make this transformation before joining with town map for consistency
+
+towns_clipped <- st_intersection(df_map, congressional_bound_003) # Makes town map (df_map) respect the congressional boundary
+
+# Remove geographies from the places we clipped out
+towns_clipped <- towns_clipped %>% 
+  filter(!st_is_empty(geometry))
+
+# Keep only polygon-like geometries
+towns_clipped <- towns_clipped %>% 
+  st_collection_extract("POLYGON")  # OR "MULTIPOLYGON"
+
+# FOR NOW: Option 5 is the quick fix to get these pushed
+##########################################################################
+
+results %>% group_by(lat_census, long_census, full_address) %>% summarise(n=n()) %>% arrange(desc(n))
+
+leaflet_likely_signers <- results %>%
+  #filter(town_name %in% towns) %>%
+  mutate(under35 = ifelse(age<=35, 1, 0),
+         over35 = ifelse(age>35, 1, 0)) %>%
+  filter(!is.na(lat_census)) %>% 
+  leaflet() %>%
+    addTiles() %>%
+    addMarkers(
+      lng = ~long_census, 
+      lat = ~lat_census,
+      popup = ~paste0("<b>Address:</b> ", full_address, "<br>",
+                "<b>Age:</b> ", age),                  
+      clusterOptions = markerClusterOptions(
+        # The code below allows us to tweak the color based on the size of the clusters 
+        iconCreateFunction = JS("
+        function(cluster) {
+          var childCount = cluster.getChildCount();
+
+          // Define color thresholds
+          var c = 'rgba(0, 175, 30, 0.6)'; // default green
+          if (childCount < 200) {
+            c = 'rgba(0, 175, 50, 0.6)';      // small
+          } else if (childCount < 500) {
+            c = 'rgba(255, 180, 0, 0.6)';    // medium = orange
+          } else if (childCount < 1000) {
+            c = 'rgba(255, 85, 0, 0.6)';    // medium = orange
+          } else {
+            c = 'rgba(255, 0, 0, 0.7)';      // large = red
+          }
+
+          return new L.DivIcon({
+            html: '<div style=\"background-color:' + c + '\"><span>' + childCount + '</span></div>',
+            className: 'marker-cluster',
+          iconSize: new L.Point(40, 40)
+          });
+        }
+      ")
+      )
+    )
+
+#%>%
+#  addCircleMarkers(group = "Group A", ...) %>%
+#  addCircleMarkers(group = "Group B", ...) %>%
+#  addLayersControl(overlayGroups = c("Group A", "Group B"))  #%>% addProviderTiles(providers$CartoDB.Positron) 
+
+saveWidget(leaflet_likely_signers, "ct03_likely_signers.html", selfcontained = TRUE)
+
+```
+
+
+## Alt. 1 Mapping points with addGLpoints()
+
+```{r}
+# ALT 1: USING addGLPoints
+x <- results %>% filter(!is.na(lat_census))
+# Have to set the coordinates in order to get the addGLpoints function from leafletextras2 to work 
+x_sf <- st_as_sf(x, coords = c("long_census", "lat_census"), crs = 4326)
+leaflet() %>%             # add leaflet base map and tiles
+  addTiles() %>%
+  addGlPoints(
+    data = x_sf,              # <-- explicitly pass the filtered dataframe here
+    color = "lightblue",
+    radius = 5,
+    fillOpacity = 0.7
+  )
+```
+
+## Alt 2. Mapdeck
+
+```{r}
+# library(mapdeck)
+# set_token("YOUR_MAPBOX_TOKEN")  # get free Mapbox token
+# mapdeck(style = mapdeck_style("dark")) %>%
+#   add_scatterplot(
+#     data = points_df,
+#     lat = "lat",
+#     lon = "long",
+#     radius = 20,
+#     fill_colour = "blue",
+#     stroke = FALSE
+#   )
+```
+
+## Alt. 3 Census Tract
+
+```{r}
+library(tidycensus)
+library(tigris)
+options(tigris_use_cache = TRUE)
+
+#census_api_key("YOUR_API_KEY", install = TRUE)
+# Convert point data to a shapefile
+results_sf <- st_as_sf(results %>% filter(!is.na(lat_census), lat_census < 41.6), coords = c('long_census', 'lat_census'), crs = 4326)
+
+# Grab Census Tract Polygons from Tigris
+tracts <- tracts(state = "CT", year = 2023, class = "sf")
+tracts <- st_transform(tracts, 4326)
+
+# Join the two, looking for anytime a point falls within a polygon
+results_tract_joined <- st_join(results_sf, tracts, join = st_within)
+
+# Aggregate the data by Census Tract to create a count for each tract (drop the point geometry)
+census_tract_agg <- results_tract_joined %>% 
+                    st_drop_geometry() %>%         # drop point geometry
+                    group_by(GEOID) %>%            # group by tract
+                    summarise(n_people = n())
+
+# Join the aggregated data back to the Tigris tract data to incorporate the polygon geometry
+census_tract_agg_with_geometry <- tracts %>%
+  left_join(census_tract_agg, by = "GEOID") %>%
+  mutate(n_people = ifelse(is.na(n_people), 0, n_people))
+          
+# Color palette for choropleth
+pal_likely_signers <- colorNumeric("Blues", census_tract_agg_with_geometry$n_people, na.color = "transparent")
+          
+census_leaflet <- leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  addPolygons(
+    data = census_tract_agg_with_geometry %>% filter(n_people > 0),
+    fillColor = ~pal_likely_signers(n_people),
+    fillOpacity = 0.4,
+    color = "black",
+    weight = 1,
+    popup = ~paste0('Tract: ', NAMELSAD, '<br>',
+                    'Likely Signers: ', n_people, '<br>')
+  )
+
+saveWidget(census_leaflet, "ct03_likely_signers_census_tract.html", selfcontained = TRUE)
+```
+
