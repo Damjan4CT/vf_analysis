@@ -30,7 +30,10 @@ library(reactable)
 library(flextable)
 library(magrittr)
 library(dplyr)
+library(randomizr)
 ```
+
+# Read in Data (from other directories)
 
 ```{r}
 setwd(r"(C:\Users\Ruairi\Documents\Coding Projects 2025\ct04_testing)")
@@ -39,6 +42,8 @@ vf_clean <- read.csv("clean_vf_with_history.csv")
 scrubbed_phones_active_dems <- read.csv("scrubbed_numbers 2026-01-03 09-24-35.csv")
 scrubbed_phones_active_dems$phone_number <- as.character(scrubbed_phones_active_dems$phone_number)
 ```
+
+# Merge Voterfile with Scrubbed Phones and Limit to Textable Numbers
 
 ```{r}
 vf_active_dems_good_phones <- left_join(vf_clean, scrubbed_phones_active_dems, join_by(phone == phone_number)) %>% filter(!is.na(id.y)) %>%
@@ -55,10 +60,51 @@ join_by(phone == phone)) %>% filter(phone_count == 1) #%>% arrange(desc(phone_co
 # I drop them above
 ``` 
 
+# Random Assignment to Message Groups with Balance on Age and Gender
+
 ```{r}
 tier_1_towns <- c('New Haven','Hamden','West Haven','Milford','Stratford')
 
-deduped_active_dems_good_phones %>% mutate(tier1 = ifelse(town_name %in% tier_1_towns, 1, 0)) %>% group_by(tier1) %>% summarise(n=n()) %>% arrange(desc(tier1))
+deduped_active_dems_good_phones <- 
+  deduped_active_dems_good_phones %>% 
+    mutate(tier1 = ifelse(town_name %in% tier_1_towns, 1, 0)) %>%
+    mutate(age_bracket = cut(age, 
+                               breaks = c(18, 35, 50, 65, Inf), 
+                               labels = c("18-34", "35-49", "50-64", "65+"),
+                               right = FALSE))
+
+lower_tiers <- deduped_active_dems_good_phones %>% filter(tier1 == 0) 
+
+set.seed(2026)
+lower_tiers$strata <- paste(lower_tiers$gender, lower_tiers$age_bracket, sep = "_")
+lower_tiers$message <- block_ra(blocks = lower_tiers$strata, 
+                                conditions = c("local_choice", "local_voice", "local_dem", "local_soft",
+                                               "dist_choice", "dist_voice", "dist_dem", "dist_soft"))
+```
+## Balance checks
+
+```{r}
+#table(lower_tiers$strata, lower_tiers$message)
+
+table(lower_tiers$message, lower_tiers$age_bracket)
+table(lower_tiers$message, lower_tiers$gender)
+table(lower_tiers$message, lower_tiers$town_name)
+
+counts <- lower_tiers %>%
+  group_by(strata, message) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  pivot_wider(names_from = message, values_from = count, values_fill = 0)
+
+col_sums <- counts %>%
+  select(-strata) %>%       # exclude the strata column
+  summarise(across(everything(), sum)) %>%
+  mutate(strata = "Total")  # add a label for the total row
+
+# Bind totals to the table
+assignment_table_with_totals <- bind_rows(counts, col_sums)
+
+assignment_table_with_totals %>% head(13)
+
+lower_tiers %>% group_by(message) %>% summarise(avg_age = mean(age), med_age = median(age))
 
 ```
-
