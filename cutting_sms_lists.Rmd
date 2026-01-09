@@ -33,6 +33,32 @@ library(dplyr)
 ```
 
 ```{r}
+setwd(r"(C:\Users\Ruairi\Documents\Coding Projects 2025\ct04_testing)")
+vf_clean <- read.csv("clean_vf_with_history.csv")
+
+scrubbed_phones_active_dems <- read.csv("scrubbed_numbers 2026-01-03 09-24-35.csv")
+scrubbed_phones_active_dems$phone_number <- as.character(scrubbed_phones_active_dems$phone_number)
+```
+
+```{r}
+vf_active_dems_good_phones <- left_join(vf_clean, scrubbed_phones_active_dems, join_by(phone == phone_number)) %>% filter(!is.na(id.y)) %>%
+  filter(fake_number != 'YES') %>%
+  filter(phone_line_type == 'CELL PHONE') %>%
+  filter(party_code %in% c('D') & status == 'A')
+
+deduped_active_dems_good_phones <- 
+left_join(vf_active_dems_good_phones, 
+vf_active_dems_good_phones %>% group_by(phone) %>% summarise(phone_count=n()), 
+join_by(phone == phone)) %>% filter(phone_count == 1) #%>% arrange(desc(phone_count), phone) #%>% select(first_name, last_name, town_name, phone, phone_count, gender, most_recent_election)
+
+# Only 702 phone numbers attributed to more than 1 person (1,444 people total)
+# I drop them above
+``` 
+
+```{r}
+tier_1_towns <- c('New Haven','Hamden','West Haven','Milford','Stratford')
+
+deduped_active_dems_good_phones %>% mutate(tier1 = ifelse(town_name %in% tier_1_towns, 1, 0)) %>% group_by(tier1) %>% summarise(n=n()) %>% arrange(desc(tier1))
 
 ```
 

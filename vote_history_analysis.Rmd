@@ -41,8 +41,8 @@ library(htmltools)
 # conn <- dbConnect(RSQLite::SQLite(), "C:/Users/Ruairi/Downloads/voters.db")
 # df_voters <- dbGetQuery(conn, "SELECT * FROM voters")
 # df_vh <- dbGetQuery(conn, "select * from voter_history")
-
-df_voters_with_history <- read.csv('clean_vf_with_vh.csv')
+setwd(r"(C:\Users\Ruairi\Documents\Coding Projects 2025\ct04_testing)")
+df_voters_with_history <- read.csv("clean_vf_with_history.csv")
 ```
 
 ### What are the best town to target?
