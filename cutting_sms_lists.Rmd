@@ -10,7 +10,7 @@ date: "2026-01-09"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+```{r, warning = FALSE, message = FALSE}
 library(dplyr)
 library(ggplot2)
 #library(cwi) 
@@ -62,7 +62,7 @@ join_by(phone == phone)) %>% filter(phone_count == 1) #%>% arrange(desc(phone_co
 # I drop them above
 ``` 
 
-# Random Assignment to Message Groups with Balance on Age and Gender
+# Random Assignment of Individuals to 8 Message Groups w/ Balance on Age and Gender
 
 ```{r}
 tier_1_towns <- c('New Haven','Hamden','West Haven','Milford','Stratford')

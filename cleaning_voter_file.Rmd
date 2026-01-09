@@ -1,14 +1,16 @@
 ---
 title: "clean_voter_file"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 date: "2025-12-24"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
-```{r}
+```{r, warning = FALSE, message = FALSE}
 library(dplyr)
 library(ggplot2)
 #library(cwi) 
@@ -101,7 +103,7 @@ df_voters_with_history <- df_voters_with_history %>%
   mutate(likely_signer = ifelse(is.na(likely_signer), 0, likely_signer)) %>% # Redefines NAs as 0s for likely_signer
   mutate(active_dem = ifelse(status == 'A' & party_code == 'D', 1, 0))
 
-write.csv(df_voters_with_history, 'clean_vf_with_vh.csv')
+write.csv(df_voters_with_history, 'clean_vf_with_history.csv')
 ```
 
 # Old Code for Freq. voter Logic
