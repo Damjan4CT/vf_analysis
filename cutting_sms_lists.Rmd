@@ -91,6 +91,7 @@ lower_tiers$message <- block_ra(blocks = lower_tiers$strata,
 table(lower_tiers$message, lower_tiers$age_bracket)
 table(lower_tiers$message, lower_tiers$gender)
 table(lower_tiers$message, lower_tiers$town_name)
+#table(lower_tiers$message, lower_tiers$likely_signer)
 
 counts <- lower_tiers %>%
   group_by(strata, message) %>%
@@ -116,8 +117,8 @@ lower_tiers %>% group_by(message) %>% summarise(avg_age = mean(age), med_age = m
 ```{r}
 #dir.create("lower_tier_csvs", showWarnings = FALSE)
 
-
 lower_tiers %>%
+  select(X, voter_id, first_name, middle_name, last_name, town_name, town_id, phone, likely_signer, age, age_bracket, gender, strata, message, id.y) %>%
   # Group by the specified column
   group_by(message) %>%
   # For each group, write the data to a CSV file
