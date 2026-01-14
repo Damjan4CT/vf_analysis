@@ -62,7 +62,7 @@ join_by(phone == phone)) %>% filter(phone_count == 1) #%>% arrange(desc(phone_co
 # I drop them above
 ``` 
 
-# Random Assignment of Individuals to 8 Message Groups w/ Balance on Age and Gender
+# Random Assignment of Tier 2+3 Individuals to 8 Message Groups w/ Balance on Age and Gender
 
 ```{r}
 tier_1_towns <- c('New Haven','Hamden','West Haven','Milford','Stratford')
@@ -82,18 +82,37 @@ lower_tiers$strata <- paste(lower_tiers$gender, lower_tiers$age_bracket, sep = "
 lower_tiers$message <- block_ra(blocks = lower_tiers$strata, 
                                 conditions = c("local_choice", "local_voice", "local_dem", "local_soft",
                                                "dist_choice", "dist_voice", "dist_dem", "dist_soft"))
+
+n_distinct(lower_tiers$voter_id)
+n_distinct(lower_tiers$phone)
 ```
+# Random Assignment of Tier 1 Individuals to 8 Message Groups w/ Balance on Age and Gender
+
+```{r}
+tier_1 <- deduped_active_dems_good_phones %>% filter(tier1 == 1) 
+
+set.seed(2026)
+tier_1$strata <- paste(tier_1$gender, tier_1$age_bracket, sep = "_")
+tier_1$message <- block_ra(blocks = tier_1$strata, 
+                                conditions = c("Message A-Day 1", "Message A-Day 2", "Message B-Day 1", "Message B-Day 2"))
+
+n_distinct(tier_1$voter_id)
+n_distinct(tier_1$phone)
+```
+
 ## Balance checks
 
 ```{r}
-#table(lower_tiers$strata, lower_tiers$message)
+randomized_data <- tier_1
 
-table(lower_tiers$message, lower_tiers$age_bracket)
-table(lower_tiers$message, lower_tiers$gender)
-table(lower_tiers$message, lower_tiers$town_name)
-#table(lower_tiers$message, lower_tiers$likely_signer)
+#table(randomized_data$strata, randomized_data$message)
 
-counts <- lower_tiers %>%
+table(randomized_data$message, randomized_data$age_bracket)
+table(randomized_data$message, randomized_data$gender)
+table(randomized_data$message, randomized_data$town_name)
+#table(randomized_data$message, randomized_data$likely_signer)
+
+counts <- randomized_data %>%
   group_by(strata, message) %>%
   summarise(count = n(), .groups = "drop") %>%
   pivot_wider(names_from = message, values_from = count, values_fill = 0)
@@ -106,23 +125,33 @@ col_sums <- counts %>%
 # Bind totals to the table
 assignment_table_with_totals <- bind_rows(counts, col_sums)
 
-assignment_table_with_totals %>% head(13)
+assignment_table_with_totals
 
-lower_tiers %>% group_by(message) %>% summarise(avg_age = mean(age), med_age = median(age))
+randomized_data %>% group_by(message) %>% summarise(avg_age = mean(age), med_age = median(age))
 ```
-
 
 # Create CSVs
 
 ```{r}
-#dir.create("lower_tier_csvs", showWarnings = FALSE)
+#dir.create("tier1_csvs", showWarnings = FALSE)
+ 
+# lower_tiers %>%
+#   select(X, voter_id, first_name, middle_name, last_name, town_name, town_id, phone, likely_signer, age, age_bracket, gender, strata, message, id.y) %>%
+#   # Group by the specified column
+#   group_by(message) %>%
+#   # For each group, write the data to a CSV file
+#   group_walk(~write_csv(x = .x, file = paste0("lower_tier_csvs/", first(.y$message), ".csv")))
 
-lower_tiers %>%
+tier_1 %>%
   select(X, voter_id, first_name, middle_name, last_name, town_name, town_id, phone, likely_signer, age, age_bracket, gender, strata, message, id.y) %>%
   # Group by the specified column
   group_by(message) %>%
   # For each group, write the data to a CSV file
-  group_walk(~write_csv(x = .x, file = paste0("lower_tier_csvs/", first(.y$message), ".csv")))
+  group_walk(~write_csv(x = .x, file = paste0("tier1_csvs/", first(.y$message), ".csv")))
 
+```
+
+```{r}
+lower_tiers %>% filter(last_name == "Savage" & first_name == "Zachary")
 ```
 
