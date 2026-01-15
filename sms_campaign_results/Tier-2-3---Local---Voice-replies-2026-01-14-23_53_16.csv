@@ -1,0 +1,676 @@
+"Campaign ID","Campaign Name","Contact Phone Number","Carrier","Campaign Number","Is Automatic Reply?","Send Direction","Send Status","Error Code","Sent At","Message Text","Texter Name","Message Type","MMS Attachments"
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039884376","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:18.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033126664","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:19.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037389617","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:21.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034909646","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:22.000Z","STOP ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037101717","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:23.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037367690","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:25.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033133217","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:24.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033432411","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:25.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038150608","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:27.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038171561","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:27.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036192299","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:30.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18587574493","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:31.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18608692467","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:31.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034669946","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:34.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033769040","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:38.000Z","Stop ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036451374","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:39.000Z","Maybe",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14752247413","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:39.000Z","No",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039805153","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:41.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038091513","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:41.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19142583330","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:41.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+16172831482","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:42.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035183339","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:43.000Z","Stop ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18606040920","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:44.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035066008","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:43.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036452810","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:44.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039097983","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:46.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+16172831482","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:48.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038418162","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:49.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038153790","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:51.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18603012573","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:53.000Z","stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036666722","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:55.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19174782119","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:55.000Z","YES",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19149802968","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:05.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034941091","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:06.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037067619","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:06.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032333871","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:07.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037681126","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:07.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032130107","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:11.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039932277","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:13.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032289670","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:15.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039222393","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:18.000Z","Yes ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+16178757721","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:18.000Z","Stop ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18608760238","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:18.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036310980","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:19.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033439109","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:20.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033439109","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:26.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035811842","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:25.000Z","Stop
+",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035307694","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:26.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039077787","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:26.000Z","Nope I want my guns and a healthy economy ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18607709537","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:27.000Z","Okay",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18602621956","DISH WIRELESS, LLC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:34.000Z","Yes ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038865621","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:36.000Z","YES",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035811842","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:37.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038049130","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:42.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14754490456","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:41.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039163055","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:43.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18602504062","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:44.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032699505","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:50.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+13473313438","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:51.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035811842","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:51.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19142202455","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:55.000Z","STOP ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038080264","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:52:57.000Z","No",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039012914","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:04.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035840662","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:05.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18603386027","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:07.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14753081898","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:11.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033028690","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:14.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18606389923","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:20.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035458298","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:24.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18608901089","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:26.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18603849468","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:33.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14753081898","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:36.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038099653","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:35.000Z","Maybe",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032403756","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:45.000Z","YES",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036666746","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:50.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+15083090269","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:52.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19183736850","UNITED STATES CELLULAR CORP.","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:55.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035437005","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:54.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039884235","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:57.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039545876","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:01.000Z","Stop
+",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14753055278","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:05.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036457643","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:08.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18603075439","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:10.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038196375","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:19.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033936256","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:20.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18607594243","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:21.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034648626","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:22.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18607594243","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:29.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19292432712","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:36.000Z","My PM OP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035130366","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:48.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038248764","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:49.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036684993","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:59.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036949359","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:00.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036949359","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:00.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18602621952","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:21.000Z","Who are you ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18602273030","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:34.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035785814","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:35.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035568120","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:38.000Z","Yes!",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039150341","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:38.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032580505","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:39.000Z","I am not Ron.  ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032580505","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:47.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034108271","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:50.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18607785780","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:56:03.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18578291330","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:56:07.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18622222324","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:56:20.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039977593","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:56:26.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038158342","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:56:28.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032157305","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:56:45.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034942356","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:56:49.000Z","Reacted ❤️ to an image",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037274874","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:57:01.000Z","I am not a CT resident ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035729826","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:57:03.000Z","Stop ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037274874","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:57:11.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039977067","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:57:14.000Z","Stop ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033056457","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:57:28.000Z","stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035264701","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:58:13.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+17185512801","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:57:05.000Z","Le gustó “Want your voice heard in North Branford, Margarita?
+
+This is Damjan Denoble. I'm reaching out about allowing a Democratic primary for Congress.
+
+Signing a petition isn't an endorsement — it's a way to have your voice heard.
+
+Would you be willing to sign? [𝗬𝗲𝘀, 𝗡𝗼, 𝗠𝗮𝘆𝗯𝗲]
+
+Text STOP to opt out”",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038588257","CSC WIRELESS, LLC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:58:24.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035085428","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:59:04.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14157607314","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:59:53.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+17185512801","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:01:01.865Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034942356","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:01:06.873Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034105546","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:01:08.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038158342","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:01:16.864Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035568120","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:01:21.876Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034929617","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:01:25.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039887466","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:01:48.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14752021587","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:01:48.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18602621952","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:02:06.883Z","I'm Damjan Denoble - I live here in Connecticut.
+
+I'm checking whether voters want the option of a contested Democratic primary for the House seat here.
+
+If you're open to it, signing the petition is what allows that option.
+
+There is more information here:
+https://damjanforct.com","Damjan Denoble","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036684993","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:02:16.881Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+17189159703","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:02:28.000Z","yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035658833","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:02:31.000Z","Stop ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035658833","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:02:46.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038366023","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:02:52.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19292432712","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:03:01.897Z","Understood - I'm sorry for the interruption.
+
+I've marked you not to be contacted again.","Damjan Denoble","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14135443465","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:02:59.000Z","Atop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+17189159703","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:03:06.890Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14135443465","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:03:01.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034648626","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:03:16.899Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032403756","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:03:21.892Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038869553","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:03:29.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14752096560","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:03:54.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038099653","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:04:01.893Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. And thank you again for taking a moment to reply.
+
+If you’d like to learn more about what the petition pledge is and isn’t, it’s here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14752096560","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:04:11.872Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038869553","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:04:16.896Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039014090","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:04:14.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18603849468","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:04:21.880Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+16502074945","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:04:21.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18608901089","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:04:31.888Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035458298","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:04:36.871Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038080264","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:04:41.872Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Damjan Denoble","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+13473313438","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:04:56.882Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038719926","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:04:51.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18602504062","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:05:01.876Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14754490456","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:05:06.891Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038865621","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:05:11.888Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18602621956","DISH WIRELESS, LLC","+12037188434","FALSE","OUTBOUND",,,"2026-01-13T23:05:16.869Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18609184308","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:05:13.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18607709537","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:05:21.877Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039077787","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:05:31.878Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Damjan Denoble","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18608760238","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:05:41.907Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039222393","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:05:46.858Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037067619","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:05:56.926Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19174782119","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:06:01.893Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038929459","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:06:02.000Z","No",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039097983","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:06:11.922Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035066008","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:06:16.898Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038929459","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:06:36.903Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Damjan Denoble","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034908405","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:06:35.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036857396","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:06:36.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14752247413","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:06:46.948Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Damjan Denoble","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036857396","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:06:46.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036451374","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:07:11.919Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. And thank you again for taking a moment to reply.
+
+If you’d like to learn more about what the petition pledge is and isn’t, it’s here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+15084235216","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:07:14.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036684993","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:07:15.000Z","I filled out the form",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032153198","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:07:33.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033141810","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:08:23.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+15084235216","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:08:31.915Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032153198","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:08:36.902Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036684993","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:08:51.960Z","Thank you — I really appreciate that!
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035009612","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:08:52.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12154212902","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:09:23.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12154212902","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:09:27.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034643735","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:10:00.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034949003","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:11:01.000Z","stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18609208908","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:11:24.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18609858785","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:11:28.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038433992","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:11:50.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037684289","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:12:10.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19145575441","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:12:32.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+15166476852","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:12:50.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034517763","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:13:16.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14079105801","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:13:21.000Z","Stop ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18609165978","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:14:06.000Z","Yes ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035272165","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:14:17.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038854368","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:14:28.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035309811","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:14:53.000Z","Who would you be running to replace?",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035183339","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:14:54.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18609165978","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:15:46.912Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039130923","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:16:35.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036407073","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:17:07.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14752286613","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:17:48.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+15123087873","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:19:27.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035309811","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:22:01.922Z","It would be the House seat currently held by Rosa DeLauro.
+
+But this outreach isn't about her or about any individual - it's just about whether voters want the option of a contested primary at all.
+
+You can find more information here:
+https://damjanforct.com","Damjan Denoble","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039130923","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:22:11.927Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036404708","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:23:47.000Z","Maybe",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033395721","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:24:20.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035458298","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:25:23.000Z","Ok I will read about ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038689108","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:27:13.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037254572","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:27:41.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+13109904437","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:28:07.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032159459","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:28:29.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036404708","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:29:31.946Z","Thank you - I really appreciate your reply.
+
+This effort is about making sure there's a choice for voters in the primary, not about asking anyone to take sides yet.
+
+If you'd like to learn more about what the petition pledge is and isn't, it's here:
+https://damjanforct.com","Damjan Denoble","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14752014683","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:30:09.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19099651708","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:34:27.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+17274335347","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:34:27.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18606851727","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:34:36.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19172421193","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:34:51.000Z","stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034307476","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:34:58.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034307476","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:35:31.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038154491","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:36:14.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18572120617","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:44:27.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036402527","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:45:39.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038435304","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:46:23.000Z","Stop ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033219396","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:47:41.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038156661","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:47:48.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18572120617","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:50:07.424Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19173863027","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:51:35.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18605086760","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:57:05.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032282130","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:58:09.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18603046727","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:59:00.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037458853","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:01:51.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034999614","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:01:53.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038872861","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:02:14.000Z","no, Rosa DeLauro is doing a fine job and we DON'T need a freshman Congress person in these trying times.... ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038872861","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T00:05:22.701Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Damjan Denoble","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18603046727","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T00:05:32.670Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032497349","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:05:56.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18609167946","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:05:58.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038872861","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:06:14.000Z","no problem- but I would advise you to rethink an uphill battle",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036456020","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:06:22.000Z","STOP ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+16317746874","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:13:28.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18603853219","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:14:58.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+15407614496","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:19:46.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+16083951370","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:26:16.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034029913","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:31:50.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19143186893","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:33:51.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036906021","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:36:04.000Z","Yes ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039064156","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:36:16.000Z","No",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037670618","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:37:48.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18606047095","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:42:50.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035099955","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:42:51.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038418875","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:44:27.000Z","STOP ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035438726","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:45:14.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039271471","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:57:17.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033760463","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:07:46.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18453371469","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:12:30.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14753551581","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:14:29.000Z","stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038333806","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:15:08.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037247236","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:17:43.000Z","YES",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14135443465","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:27:48.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14135443465","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:27:50.000Z","HOE",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038501286","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:28:56.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18607962756","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:42:25.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038157970","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:42:56.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12037247236","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:43:23.870Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18453371469","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:43:28.888Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033760463","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:43:33.868Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039064156","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:43:43.884Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Ruairi","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036906021","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:43:48.866Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036906021","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:44:34.000Z","Ok",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036906021","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:53:13.938Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033146352","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:53:32.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036906021","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:53:51.000Z","Yeah ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+14013459241","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:08:13.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18607703515","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:33:12.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035211130","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:44:10.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19736475392","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:54:01.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+17248566271","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:59:54.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+17248566271","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:59:58.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12072905568","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T03:04:12.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032578715","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T03:18:25.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18502187348","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T03:37:32.000Z","Stop ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036403691","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T04:32:22.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035031857","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T05:41:49.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035309811","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T10:33:52.000Z","Rosa is my gal. Sorry.",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035454651","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T11:38:49.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18608829415","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T11:56:37.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032816094","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T11:57:05.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035300990","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T13:01:23.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12034822706","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T13:18:32.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035031857","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T13:18:46.369Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036403691","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T13:18:51.362Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+19736475392","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T13:18:56.339Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035211130","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T13:19:01.374Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18607703515","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T13:19:21.377Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035309811","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T13:22:36.412Z","Good morning. Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Damjan Denoble","SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038685133","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T13:22:41.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036054118","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T13:37:47.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035348363","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T13:42:38.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038598324","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T14:02:44.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12038598324","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T14:04:36.538Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039801436","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T14:06:44.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12039086191","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T14:52:43.000Z","Stop ",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18604836742","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T16:14:49.000Z","Stop",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035584716","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T17:09:21.000Z","Yes",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12032600934","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T17:10:09.000Z","STOP",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12035584716","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T17:54:00.361Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12036877825","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T19:45:29.000Z","Fuck u",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+18602621952","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T22:07:42.000Z","
+Why do you want to try to unset Rosa Delo",,"SMS",
+"019bb93f-5ff6-7ed7-9667-8e6a64f287d1","Tier 2-3 - Local + Voice","+12033911815","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T22:36:39.000Z","Stop",,"SMS",
