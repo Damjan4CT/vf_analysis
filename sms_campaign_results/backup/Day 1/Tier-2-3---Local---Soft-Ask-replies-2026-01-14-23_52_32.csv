@@ -1,0 +1,790 @@
+"Campaign ID","Campaign Name","Contact Phone Number","Carrier","Campaign Number","Is Automatic Reply?","Send Direction","Send Status","Error Code","Sent At","Message Text","Texter Name","Message Type","MMS Attachments"
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034448297","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:05.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034408065","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:08.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034886613","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:23.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14752271302","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:25.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039977660","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:29.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034405975","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:29.000Z","STOP ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033054289","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:32.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035084882","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:34.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039134857","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:34.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035870937","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:38.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038361457","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:41.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16468423232","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:42.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034648508","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:42.000Z","No ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036661591","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:42.000Z","No ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039420403","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:43.000Z","Yes ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032139766","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:45.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036661591","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:44.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18609660116","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:45.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18606396731","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:49.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16157081442","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:50.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12069629952","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:49.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033147964","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:51.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+17814202711","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:53.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039930318","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:54.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033088689","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:46.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605787317","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:54.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038583367","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:47.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+13478632906","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:50.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038237575","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:55.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18602813374","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:55.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605102005","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:56.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18606373572","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:32:59.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038248368","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:01.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034196442","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:01.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036239816","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:03.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035814564","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:05.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039082631","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:07.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035899943","DISH WIRELESS, LLC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:10.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034155997","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:11.000Z","Maybe ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035814564","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:33:21.130Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039490503","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:16.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16192513043","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:21.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032431440","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:24.000Z","Not a democrat and don't live in ct",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032784248","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:25.000Z","I would, but I'm no longer a resident of Connecticut, sorry",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039547889","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:30.000Z","Not ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038109433","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:34.000Z","Sorry don't live there anymore",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034155997","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:33:41.142Z","That's completely fair.
+
+Just to be clear, this step isn't a campaign and it isn't an endorsement - it only checks whether voters want the option of a contested primary at all.
+
+If you'd like, there's a short explanation here:
+https://damjanforct.com","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034146664","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:37.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039969853","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:39.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032431440","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:43.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034905228","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:43.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+13153969202","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:47.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034445007","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:54.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034154001","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:59.000Z","The one thing I truly think congress should have are term limits!!!",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14752815664","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:33:58.000Z","I am no longer a resident of CT",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035023449","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:34:12.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036719816","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:34:15.000Z","Democrats have to stop being nice . This  is actually 1939 Germany. Murder in the streets. ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038048776","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:34:16.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14752288807","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:34:17.000Z","yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18607971268","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:34:19.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16465960823","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:34:26.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039827011","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:34:43.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18608843400","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:34:45.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14752288807","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:34:56.121Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039827011","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:34:58.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038048776","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:35:06.134Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038489138","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:00.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039827011","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:13.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039085558","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:14.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034445007","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:35:26.193Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18603010878","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:25.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037361754","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:26.000Z","NO! ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039085558","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:31.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037361754","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:32.000Z","stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037709871","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:33.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034646882","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:34.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032604335","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:35.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034943513","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:40.000Z","For sure don't contact me again",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035065692","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:40.000Z","stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037454830","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:35:52.000Z","I'm on vacation",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14752815664","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:36:06.227Z","Thank you for letting us know. We'll take you off our list. Have a great day!","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034943513","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:36:31.234Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039796153","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:36:30.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038419789","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:36:35.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035899943","DISH WIRELESS, LLC","+12037188434","FALSE","OUTBOUND",,,"2026-01-13T22:36:46.200Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16192513043","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:36:51.215Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19786217745","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:36:49.000Z","Maybe ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032325959","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:36:53.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038237575","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:37:01.218Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605102005","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:37:06.254Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037679168","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:37:04.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039420403","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:37:11.235Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037457495","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:37:08.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033058142","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:37:09.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18604029079","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:37:19.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605754964","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:37:24.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12102189484","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:37:27.000Z","Yes!!!",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032784248","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:37:36.197Z","No worries. Thank you for letting us know, we'll take you off our list. Have a great day!","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037687142","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:37:33.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12102189484","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:37:51.208Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605754964","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:38:16.231Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039419284","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:38:15.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037687142","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:38:31.220Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037457495","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:38:41.245Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19786217745","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:38:46.248Z","That's completely fair.
+
+Just to be clear, this step isn't a campaign and it isn't an endorsement - it only checks whether voters want the option of a contested primary at all.
+
+If you'd like, there's a short explanation here:
+https://damjanforct.com","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036877095","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:38:45.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038416602","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:38:49.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18608819659","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:38:55.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032604335","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:39:01.243Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036877095","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:39:06.235Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18608819659","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:39:16.217Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038416602","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:39:21.203Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035130024","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:39:19.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038489138","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:39:26.216Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605386709","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:39:26.000Z","Yes. ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18608185174","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:39:35.000Z","Yes, I consider signing no problem",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605103464","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:39:51.000Z","Maybe ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14437911457","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:39:52.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038109433","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:40:16.212Z","Thanks for letting us know, we'll take you off our list. Have a great day!","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605103464","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:40:26.260Z","That's completely fair.
+
+Just to be clear, this step isn't a campaign and it isn't an endorsement - it only checks whether voters want the option of a contested primary at all.
+
+If you'd like, there's a short explanation here:
+https://damjanforct.com","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15187966728","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:40:25.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18608185174","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:40:36.214Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035841139","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:40:33.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605386709","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:40:41.242Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035130024","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:40:51.233Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14752815664","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:40:57.000Z","You too! Go dems! ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12409231062","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:41:10.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034145834","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:41:14.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14752336270","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:41:34.000Z","Fuck you",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15168843349","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:41:39.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18609862897","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:42:01.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15168843349","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:42:11.211Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12409231062","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:42:16.220Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18609862897","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:42:12.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034648508","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:42:51.262Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+13472634316","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:43:15.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032249840","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:43:20.000Z","Yes!",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032604335","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:43:45.000Z","Yeah we need a choice our senators should face a serious challenge not just against the token republican ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19787712999","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:43:56.000Z","Yes ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19787712999","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:44:26.291Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035105508","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:44:21.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032099313","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:44:33.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036405849","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:44:34.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032604335","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:44:46.245Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032249840","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:44:51.241Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18606781190","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:44:54.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034886613","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:45:01.250Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039547889","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:45:11.252Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033066223","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:45:21.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+17814053435","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:45:30.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034443942","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:45:39.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19144137076","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:45:44.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035354223","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:46:30.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18608157211","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:47:19.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16315785542","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:47:41.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032782761","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:47:57.000Z","I need job u got one for me ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036712501","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:48:09.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18606781190","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T22:48:41.277Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034149392","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:49:23.000Z","Maybe",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18579193354","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:49:34.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033852178","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:49:43.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+13473876593","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:49:59.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038109433","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:50:14.000Z","Good luck!!!",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16039731626","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:50:19.000Z","STOP 
+
+
+Moved states ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18603014515","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:50:32.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036711526","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:50:56.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036002310","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:51:57.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034151620","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:03.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036859981","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:12.000Z","State congress? Why? Who is our current rep and what have they messed up?",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039156721","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:53:32.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035075479","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:54:05.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039077706","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:09.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039019339","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:35.000Z","yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033142520","CSC WIRELESS, LLC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:55:58.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18602278178","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:56:57.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035848217","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:58:16.000Z","stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18603014905","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:58:31.000Z","NO, we have Rosa!",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16465915086","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T22:59:59.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035584321","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:00:25.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035601722","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:00:44.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18603014905","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:01:06.878Z","That's completely fair - thank you for being direct.
+
+This effort is only about whether there should be a choice, not about who people prefer, but I respect your position and won't follow up further.","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039019339","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:01:21.875Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039156721","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:01:26.874Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035601722","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:01:31.868Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035071720","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:01:33.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035075479","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:01:41.908Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036711526","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:01:46.893Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18607596825","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:01:43.000Z","stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034149392","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:02:06.884Z","That's completely fair.
+
+Just to be clear, this step isn't a campaign and it isn't an endorsement - it only checks whether voters want the option of a contested primary at all.
+
+If you'd like, there's a short explanation here:
+https://damjanforct.com","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039156963","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:02:15.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034919291","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:02:36.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16039731626","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:03:16.898Z","Understood - I'm sorry for the interruption.
+
+I've marked you not to be contacted again.","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037060028","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:03:10.000Z","No",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034154001","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:04:06.874Z","Thank you — I appreciate that.
+
+For now I’m just checking whether voters want a choice in the primary at all, but I’m grateful you took a moment to reply.
+
+The best thing to do is check out the pledge form and sign it, and/or sign it and then send it to someone else who would sign to:
+https://damjanforct.com
+
+We will be back in touch closer to April with confirmation messages for all who sign the pledge or indicated they wished to.","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037060028","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:04:16.898Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+13479686112","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:04:30.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16177106394","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:04:38.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18603107839","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:06:13.000Z","Maybe ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038865314","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:07:11.000Z","damjan denoble lol",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034154001","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:06:22.000Z","To be honest, I'm done with democrats. I've been voting republican. I just have not changed my affiliation officially. The democrats in this state are killing the working class financially. It's absolutely disgusting ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032150925","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:08:00.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18326460985","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:08:31.000Z","stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18607776580","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:09:22.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038865314","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:09:31.935Z","Understood - I'm sorry for the interruption.
+
+I've marked you not to be contacted again.","Damjan Denoble","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033142153","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:09:28.000Z","Sto",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18607776580","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:09:41.896Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034154001","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:09:56.893Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Damjan Denoble","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18603107839","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:10:06.909Z","That's completely fair.
+
+Just to be clear, this step isn't a campaign and it isn't an endorsement - it only checks whether voters want the option of a contested primary at all.
+
+If you'd like, there's a short explanation here:
+https://damjanforct.com","Damjan Denoble","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034154001","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:10:37.000Z","Thank you, same to you",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035811752","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:10:50.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036859981","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:11:16.898Z","This is regarding the CT-03 U.S race for the House, which would be a federal office race.
+
+Signing just allows a Democratic primary to take place.
+
+It does not support any candidate, it does not put you on a list, and it does not obligate you to vote or donate or participate further.
+
+If you’d like, there’s a short explanation here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035811752","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:11:14.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038039776","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:12:00.000Z","Louis phayo yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036312134","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:12:35.000Z","STOP ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+17165781986","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:13:01.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036759262","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:13:38.000Z","Maybe",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036719816","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:14:26.911Z","Thank you — I strongly agree.
+
+That being said - 
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14754349420","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:14:27.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036759262","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:14:36.903Z","That's completely fair.
+
+Just to be clear, this step isn't a campaign and it isn't an endorsement - it only checks whether voters want the option of a contested primary at all.
+
+If you'd like, there's a short explanation here:
+https://damjanforct.com","Damjan Denoble","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038039776","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:14:51.901Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12134589369","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:14:54.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039102625","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:15:34.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036687952","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:16:31.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18602273384","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:17:00.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038865314","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:17:50.000Z","what's your favorite color",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033068886","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:18:27.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033068886","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:18:36.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032855274","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:18:45.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032855274","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:21:26.919Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036875715","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:22:40.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035203630","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:22:43.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15139684992","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:26:19.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18603093018","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:26:43.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19043836144","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:27:19.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037157140","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:28:33.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16692439492","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:28:39.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036719816","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:29:11.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19043836144","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:30:03.709Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com
+
+(Also.... hi Chris!!!!)","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15139684992","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:30:07.779Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036875715","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:30:15.783Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18603430837","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:30:31.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034948582","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:31:10.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19043836144","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:33:09.000Z","Hiii :)",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18609300242","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:36:32.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038242338","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:38:01.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15107637915","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:38:08.000Z","Maybe ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039545110","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:38:47.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15107637915","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:39:12.372Z","That's completely fair.
+
+Just to be clear, this step isn't a campaign and it isn't an endorsement - it only checks whether voters want the option of a contested primary at all.
+
+If you'd like, there's a short explanation here:
+https://damjanforct.com","Damjan Denoble","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038242338","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-13T23:39:17.365Z","That's completely fair.
+
+Just to be clear, this step isn't a campaign and it isn't an endorsement - it only checks whether voters want the option of a contested primary at all.
+
+If you'd like, there's a short explanation here:
+https://damjanforct.com","Damjan Denoble","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038431474","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:42:05.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034461863","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:55:26.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15712289903","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-13T23:58:10.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18608340377","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:02:31.000Z","So that when u get the position u will delete or blocked my number from your phone BIG NO. AM A HOMELESS FOR ONE YEAR NOW WITH MY 7 YEAR OLD DAUGHTER SLEEPING IN MY CAR AND NO ONE IN ANYWHERE SAMES TO CAER . AGAIN NO.",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038689021","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:04:17.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18609181555","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:05:07.000Z","Maybe ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035433814","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:05:24.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18609181555","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T00:06:07.699Z","That's completely fair.
+
+Just to be clear, this step isn't a campaign and it isn't an endorsement - it only checks whether voters want the option of a contested primary at all.
+
+If you'd like, there's a short explanation here:
+https://damjanforct.com","Damjan Denoble","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15712289903","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T00:06:42.703Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035565888","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:06:55.000Z","STOP ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038436718","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:09:57.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038930813","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:10:56.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036407449","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:15:01.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19785091631","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:16:41.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032183785","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:16:43.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036669065","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:17:30.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036669065","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T00:19:13.023Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036682821","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:25:17.000Z","You haven't even filled out the ballotpedia survey yet. Get your shit together before spamming people with an idiotic petition, as if there's not going to be a fucking primary. You're not off to a very good fucking start for looking relevant and reliable.",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035069653","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:29:58.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035434045","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:33:53.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+17187914243","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:34:52.000Z","Leave Rosa alone, you asshole.",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035130670","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:36:41.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14152656747","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:36:48.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035256946","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:36:54.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18609229084","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:39:30.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605590759","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:41:58.000Z","No",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034159833","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:42:24.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038364199","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:49:23.000Z","No ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033055835","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T00:52:01.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035896822","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:29:03.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033083820","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:32:35.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033055835","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:41:13.849Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038364199","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:41:23.844Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18605590759","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:41:28.877Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035256946","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:41:38.860Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14152656747","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:41:43.874Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037154812","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:46:06.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038364199","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:46:45.000Z","You to brother",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039962152","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:47:11.000Z","No and stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+16463428949","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T01:47:17.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+17187914243","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T01:56:38.936Z","Understood - I'm sorry for the interruption.
+
+I've marked you not to be contacted again.","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12038240224","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:02:23.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+17187914243","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:13:34.000Z","I'm a firm supporter or the democratic party, and there are many elderly Congress people who need to retire.  Rosa is not one of them.
+
+When you send out a message describing yourself as a ""concerned citizen,"" Damjan, rather than a candidate, you present as a weasley douche bag rather than an ambitious douche bag.",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+17187914243","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:15:25.000Z","Hope this helps.",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+17187914243","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:17:03.000Z","ALSO, your link doesn't work.  Who is running your campaign?  Amateur.",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19089024249","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:19:16.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+14752289663","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:20:11.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035006846","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:32:36.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033607574","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T02:50:53.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15039535759","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T03:07:17.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032311166","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T04:03:01.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039062424","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T04:25:15.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037678594","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T05:14:52.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037256361","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T06:49:12.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12037256361","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T06:49:38.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15124222452","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T11:46:39.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12039791623","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T12:47:35.000Z","Stop",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+15124222452","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T13:17:56.381Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12033607574","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T13:18:01.337Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036682821","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T13:25:46.419Z","Hi, good morning. Thank you for your feedback. There's never been a Congressional primary for the House in the entire history of Connecticut. You can find more information here:
+
+https://ctmirror.org/2025/08/06/connecticut-americas-strongest-incumbent-protection-state/
+
+We will not be filling out any surveys, as we are focusing on the petition process and trying to understand how to ""solve"" it in order to force the first primary in the district's history for this state.
+
+Your response, however, is noted. We will not contact you further.
+
+You can otherwise find comprehensive information on the petition process here:
+
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12122031885","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T14:05:05.000Z","Stop ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18604635334","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T14:52:49.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032780041","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T14:53:21.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+18604635334","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T15:12:12.753Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Damjan Denoble","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036955758","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T15:23:02.000Z","Maybe",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12036955758","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T15:25:43.097Z","That's completely fair.
+
+Just to be clear, this step isn't a campaign and it isn't an endorsement - it only checks whether voters want the option of a contested primary at all.
+
+If you'd like, there's a short explanation here:
+https://damjanforct.com","Damjan Denoble","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19172932010","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T15:45:08.000Z","No",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034461431","VERIZON","+12037188434","FALSE","INBOUND",,,"2026-01-14T16:12:50.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034150449","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T17:29:37.000Z","Yes",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034150449","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T17:52:25.351Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12034461431","VERIZON","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T17:52:25.311Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+19172932010","AT&T","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T17:52:40.309Z","Thank you for replying - I appreciate you taking the time.
+
+I won't bother you again about this. Wishing you a good day.","Ruairi","SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12035250144","AT&T","+12037188434","FALSE","INBOUND",,,"2026-01-14T20:35:59.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032131369","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T22:38:59.000Z","Yes ",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032859452","T-MOBILE USA INC","+12037188434","FALSE","INBOUND",,,"2026-01-14T22:41:15.000Z","STOP",,"SMS",
+"019bb953-4e95-75d4-8642-209592b35a8b","Tier 2-3 - Local + Soft Ask","+12032131369","T-MOBILE USA INC","+12037188434","FALSE","OUTBOUND","DELIVERED",,"2026-01-14T22:43:49.888Z","Thank you — I really appreciate that.
+
+This step is just about making sure there’s a choice for voters in the primary, not about asking anyone to take sides yet.
+
+I’ll be in touch soon with next steps. Thanks again for replying.
+
+If you’d like to learn more about the petition pledge, you can find it here:
+https://damjanforct.com","Ruairi","MMS",

@@ -1,0 +1,238 @@
+Town,Age Group,Gender,Count,Percent of Town
+New Haven,18-24,F,4,2.9%
+New Haven,18-24,M,4,2.9%
+New Haven,25-34,F,13,9.4%
+New Haven,25-34,M,11,7.9%
+New Haven,25-34,U,1,0.7%
+New Haven,35-44,F,15,10.8%
+New Haven,35-44,M,14,10.1%
+New Haven,45-54,F,15,10.8%
+New Haven,45-54,M,13,9.4%
+New Haven,55-64,F,9,6.5%
+New Haven,55-64,M,11,7.9%
+New Haven,55-64,U,1,0.7%
+New Haven,65+,F,17,12.2%
+New Haven,65+,M,10,7.2%
+New Haven,65+,U,1,0.7%
+Hamden,18-24,F,2,2.6%
+Hamden,18-24,M,2,2.6%
+Hamden,25-34,F,6,7.9%
+Hamden,25-34,M,8,10.5%
+Hamden,35-44,F,10,13.2%
+Hamden,35-44,M,9,11.8%
+Hamden,45-54,F,3,3.9%
+Hamden,45-54,M,4,5.3%
+Hamden,55-64,F,9,11.8%
+Hamden,55-64,M,7,9.2%
+Hamden,65+,F,10,13.2%
+Hamden,65+,M,6,7.9%
+Stratford,18-24,F,2,2.7%
+Stratford,18-24,M,1,1.4%
+Stratford,25-34,F,3,4.1%
+Stratford,25-34,M,5,6.8%
+Stratford,35-44,F,7,9.5%
+Stratford,35-44,M,6,8.1%
+Stratford,45-54,F,7,9.5%
+Stratford,45-54,M,3,4.1%
+Stratford,55-64,F,8,10.8%
+Stratford,55-64,M,6,8.1%
+Stratford,65+,F,13,17.6%
+Stratford,65+,M,11,14.9%
+Stratford,65+,U,2,2.7%
+Milford,18-24,F,3,4.7%
+Milford,18-24,M,4,6.2%
+Milford,25-34,F,2,3.1%
+Milford,25-34,M,3,4.7%
+Milford,35-44,F,3,4.7%
+Milford,35-44,M,4,6.2%
+Milford,45-54,F,5,7.8%
+Milford,45-54,M,5,7.8%
+Milford,55-64,F,2,3.1%
+Milford,55-64,M,7,10.9%
+Milford,65+,F,21,32.8%
+Milford,65+,M,3,4.7%
+Milford,65+,U,2,3.1%
+West Haven,18-24,F,3,4.8%
+West Haven,18-24,M,1,1.6%
+West Haven,18-24,U,1,1.6%
+West Haven,25-34,F,2,3.2%
+West Haven,25-34,M,6,9.5%
+West Haven,35-44,F,3,4.8%
+West Haven,35-44,M,4,6.3%
+West Haven,45-54,F,5,7.9%
+West Haven,45-54,M,8,12.7%
+West Haven,45-54,U,1,1.6%
+West Haven,55-64,F,9,14.3%
+West Haven,55-64,M,8,12.7%
+West Haven,65+,F,7,11.1%
+West Haven,65+,M,4,6.3%
+West Haven,65+,U,1,1.6%
+East Haven,18-24,F,1,2.7%
+East Haven,18-24,M,1,2.7%
+East Haven,25-34,F,5,13.5%
+East Haven,25-34,M,2,5.4%
+East Haven,35-44,F,1,2.7%
+East Haven,35-44,M,4,10.8%
+East Haven,45-54,F,4,10.8%
+East Haven,45-54,M,1,2.7%
+East Haven,55-64,F,3,8.1%
+East Haven,55-64,M,4,10.8%
+East Haven,55-64,U,2,5.4%
+East Haven,65+,F,2,5.4%
+East Haven,65+,M,4,10.8%
+East Haven,65+,U,3,8.1%
+Wallingford,18-24,F,2,5.7%
+Wallingford,18-24,M,1,2.9%
+Wallingford,25-34,F,2,5.7%
+Wallingford,25-34,M,3,8.6%
+Wallingford,35-44,F,4,11.4%
+Wallingford,35-44,M,4,11.4%
+Wallingford,45-54,F,2,5.7%
+Wallingford,45-54,M,3,8.6%
+Wallingford,55-64,F,1,2.9%
+Wallingford,55-64,M,3,8.6%
+Wallingford,65+,F,7,20.0%
+Wallingford,65+,M,1,2.9%
+Wallingford,65+,U,2,5.7%
+Shelton,18-24,F,2,6.2%
+Shelton,18-24,M,1,3.1%
+Shelton,25-34,F,4,12.5%
+Shelton,25-34,M,6,18.8%
+Shelton,35-44,F,1,3.1%
+Shelton,35-44,M,3,9.4%
+Shelton,45-54,F,3,9.4%
+Shelton,45-54,M,1,3.1%
+Shelton,55-64,F,3,9.4%
+Shelton,55-64,M,2,6.2%
+Shelton,65+,F,4,12.5%
+Shelton,65+,M,2,6.2%
+Guilford,18-24,M,2,7.4%
+Guilford,25-34,F,1,3.7%
+Guilford,25-34,M,1,3.7%
+Guilford,35-44,F,6,22.2%
+Guilford,35-44,M,4,14.8%
+Guilford,45-54,F,2,7.4%
+Guilford,45-54,M,1,3.7%
+Guilford,55-64,F,1,3.7%
+Guilford,55-64,M,1,3.7%
+Guilford,65+,F,6,22.2%
+Guilford,65+,M,2,7.4%
+Naugatuck,18-24,M,2,7.7%
+Naugatuck,25-34,F,4,15.4%
+Naugatuck,25-34,M,3,11.5%
+Naugatuck,35-44,F,3,11.5%
+Naugatuck,35-44,M,1,3.8%
+Naugatuck,45-54,F,3,11.5%
+Naugatuck,45-54,M,1,3.8%
+Naugatuck,55-64,F,2,7.7%
+Naugatuck,55-64,M,1,3.8%
+Naugatuck,65+,F,4,15.4%
+Naugatuck,65+,M,2,7.7%
+Middletown,18-24,F,1,4.0%
+Middletown,18-24,M,2,8.0%
+Middletown,18-24,U,1,4.0%
+Middletown,25-34,M,1,4.0%
+Middletown,35-44,F,1,4.0%
+Middletown,35-44,M,3,12.0%
+Middletown,45-54,M,2,8.0%
+Middletown,55-64,F,4,16.0%
+Middletown,55-64,M,5,20.0%
+Middletown,65+,F,1,4.0%
+Middletown,65+,M,3,12.0%
+Middletown,65+,U,1,4.0%
+Seymour,18-24,F,2,8.7%
+Seymour,25-34,F,1,4.3%
+Seymour,25-34,M,3,13.0%
+Seymour,35-44,F,3,13.0%
+Seymour,35-44,M,1,4.3%
+Seymour,45-54,F,1,4.3%
+Seymour,45-54,M,2,8.7%
+Seymour,55-64,F,5,21.7%
+Seymour,55-64,M,1,4.3%
+Seymour,65+,F,3,13.0%
+Seymour,65+,M,1,4.3%
+Branford,25-34,F,1,4.5%
+Branford,25-34,M,3,13.6%
+Branford,35-44,F,1,4.5%
+Branford,45-54,F,1,4.5%
+Branford,55-64,F,6,27.3%
+Branford,55-64,M,1,4.5%
+Branford,65+,F,5,22.7%
+Branford,65+,M,4,18.2%
+North Haven,18-24,M,2,9.1%
+North Haven,25-34,F,2,9.1%
+North Haven,25-34,M,3,13.6%
+North Haven,35-44,F,2,9.1%
+North Haven,35-44,M,3,13.6%
+North Haven,45-54,F,1,4.5%
+North Haven,55-64,F,1,4.5%
+North Haven,55-64,M,2,9.1%
+North Haven,65+,F,3,13.6%
+North Haven,65+,M,3,13.6%
+Ansonia,18-24,M,2,12.5%
+Ansonia,25-34,M,1,6.2%
+Ansonia,35-44,F,2,12.5%
+Ansonia,35-44,M,2,12.5%
+Ansonia,45-54,M,1,6.2%
+Ansonia,55-64,F,2,12.5%
+Ansonia,55-64,M,2,12.5%
+Ansonia,65+,F,2,12.5%
+Ansonia,65+,M,2,12.5%
+North Branford,18-24,F,1,6.2%
+North Branford,25-34,F,1,6.2%
+North Branford,35-44,F,4,25.0%
+North Branford,35-44,M,3,18.8%
+North Branford,45-54,F,2,12.5%
+North Branford,55-64,F,3,18.8%
+North Branford,55-64,M,1,6.2%
+North Branford,65+,F,1,6.2%
+Waterbury,25-34,F,2,13.3%
+Waterbury,25-34,M,1,6.7%
+Waterbury,35-44,F,1,6.7%
+Waterbury,35-44,U,1,6.7%
+Waterbury,45-54,F,3,20.0%
+Waterbury,55-64,F,1,6.7%
+Waterbury,55-64,M,1,6.7%
+Waterbury,65+,F,2,13.3%
+Waterbury,65+,M,3,20.0%
+Prospect,18-24,F,1,9.1%
+Prospect,25-34,F,3,27.3%
+Prospect,35-44,M,1,9.1%
+Prospect,45-54,M,1,9.1%
+Prospect,55-64,F,2,18.2%
+Prospect,55-64,M,1,9.1%
+Prospect,65+,F,2,18.2%
+Beacon Falls,25-34,F,1,12.5%
+Beacon Falls,25-34,M,1,12.5%
+Beacon Falls,45-54,F,1,12.5%
+Beacon Falls,65+,F,3,37.5%
+Beacon Falls,65+,M,2,25.0%
+Derby,18-24,M,1,12.5%
+Derby,35-44,M,1,12.5%
+Derby,45-54,F,1,12.5%
+Derby,45-54,M,1,12.5%
+Derby,55-64,F,2,25.0%
+Derby,55-64,M,2,25.0%
+Durham,18-24,F,1,16.7%
+Durham,35-44,F,1,16.7%
+Durham,45-54,F,1,16.7%
+Durham,55-64,F,1,16.7%
+Durham,55-64,M,1,16.7%
+Durham,65+,F,1,16.7%
+Orange,35-44,M,1,16.7%
+Orange,45-54,F,1,16.7%
+Orange,45-54,M,1,16.7%
+Orange,65+,F,2,33.3%
+Orange,65+,M,1,16.7%
+Bethany,35-44,F,1,25.0%
+Bethany,45-54,F,1,25.0%
+Bethany,55-64,F,1,25.0%
+Bethany,55-64,M,1,25.0%
+Middlefield,45-54,F,1,25.0%
+Middlefield,55-64,F,1,25.0%
+Middlefield,55-64,M,1,25.0%
+Middlefield,65+,F,1,25.0%
+Woodbridge,18-24,F,1,25.0%
+Woodbridge,25-34,M,1,25.0%
+Woodbridge,35-44,M,1,25.0%
+Woodbridge,45-54,F,1,25.0%

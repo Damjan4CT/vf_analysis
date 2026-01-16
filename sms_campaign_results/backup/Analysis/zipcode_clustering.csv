@@ -1,0 +1,43 @@
+Zipcode,Town,Yes Votes,Total Contacts,Yes Rate (%),Meets Criteria,Priority
+06516,West Haven,63,242,26.0,Yes,High
+06511,New Haven,58,456,12.7,Yes,Medium
+06614,Stratford,50,167,29.9,Yes,High
+06460,Milford,47,203,23.2,Yes,High
+06492,Wallingford,34,169,20.1,Yes,High
+06484,Shelton,32,136,23.5,Yes,High
+06513,New Haven,30,162,18.5,Yes,High
+06514,Hamden,29,184,15.8,Yes,High
+06437,Guilford,27,98,27.6,Yes,High
+06515,New Haven,26,115,22.6,Yes,High
+06517,Hamden,26,128,20.3,Yes,High
+06770,Naugatuck,26,131,19.8,Yes,High
+06512,East Haven,25,162,15.4,Yes,High
+06457,Middletown,24,135,17.8,Yes,High
+06483,Seymour,23,68,33.8,Yes,High
+06615,Stratford,23,103,22.3,Yes,High
+06473,North Haven,22,95,23.2,Yes,High
+06405,Branford,22,164,13.4,Yes,Medium
+06518,Hamden,21,118,17.8,Yes,High
+06461,Milford,17,72,23.6,Yes,High
+06401,Ansonia,16,86,18.6,Yes,High
+06513,East Haven,12,162,7.4,Yes,Low
+06712,Prospect,11,46,23.9,Yes,High
+06519,New Haven,11,50,22.0,Yes,High
+06512,New Haven,11,162,6.8,Yes,Low
+06471,North Branford,10,31,32.3,Yes,High
+06403,Beacon Falls,8,27,29.6,Yes,Medium
+06418,Derby,8,36,22.2,Yes,Medium
+06708,Waterbury,8,36,22.2,Yes,Medium
+06706,Waterbury,7,34,20.6,Yes,Medium
+06422,Durham,6,23,26.1,Yes,Medium
+06472,Northford,6,24,25.0,Yes,Medium
+06477,Orange,5,41,12.2,Yes,Medium
+06524,Bethany,4,25,16.0,Yes,Low
+06525,Woodbridge,4,59,6.8,Yes,Low
+06455,Middlefield,3,18,16.7,No,N/A
+06510,New Haven,3,43,7.0,Yes,Low
+00000,Middletown,1,17,5.9,No,N/A
+00000,Middlefield,1,17,5.9,No,N/A
+00000,Wallingford,1,17,5.9,No,N/A
+00000,Stratford,1,17,5.9,No,N/A
+00000,Orange,1,17,5.9,No,N/A
