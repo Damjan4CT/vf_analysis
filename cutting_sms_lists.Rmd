@@ -148,10 +148,8 @@ tier_1 %>%
   group_by(message) %>%
   # For each group, write the data to a CSV file
   group_walk(~write_csv(x = .x, file = paste0("tier1_csvs/", first(.y$message), ".csv")))
-
 ```
 
-```{r}
-lower_tiers %>% filter(last_name == "Savage" & first_name == "Zachary")
-```
+
+
 

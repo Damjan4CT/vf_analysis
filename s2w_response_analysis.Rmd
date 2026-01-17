@@ -1,0 +1,132 @@
+---
+title: "s2w_response_analysis"
+output: pdf_document
+date: "2026-01-15"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(googlesheets4)
+```
+
+```{r}
+# Read in and Clean ALL S2W CSVs
+s2w_replies_file_paths <- list.files(
+  path = r"(C:\Users\Ruairi\Documents\Coding Projects 2025\ct04_testing\S2W Replies and Responses Jan 15 6pm)",
+  pattern = "replies.*\\.csv$", # Matches "replies" or "Replies" followed by anything and ending in .csv
+  full.names = TRUE
+)
+s2w_replies <- map_dfr(s2w_replies_file_paths, read_csv, .id = "source_file")
+
+s2w_replies_grouped_by_msg <- s2w_replies %>% 
+  group_by(`Contact Phone Number`) %>% 
+  summarise(n=n(), full_convo = paste(`Message Text`, collapse = "\n\n[NEXT MESSAGE]\n\n")) %>% 
+  arrange(desc(n))
+
+s2w_results_file_paths <- list.files(
+  path = r"(C:\Users\Ruairi\Documents\Coding Projects 2025\ct04_testing\S2W Replies and Responses Jan 15 6pm)",
+  pattern = "results.*\\.csv$", # Matches "replies" or "Replies" followed by anything and ending in .csv
+  full.names = TRUE
+)
+s2w_results <- map_dfr(s2w_results_file_paths, read_csv, .id = "source_file")
+
+```
+
+
+```{r GoogleSheetTransferQual}
+df_convos <- left_join(s2w_results, s2w_replies_grouped_by_msg, by = "Contact Phone Number") %>% 
+  select(
+    -c(`source_file`, `Campaign ID`, `Carrier`, `Contact Script Message Type`, `Contact Script Media URL`, `Contact Script Variant ID`, `Donation Amount`)
+    ) %>%
+  arrange(desc(n), full_convo) %>% 
+  filter(n > 1)
+
+# gs4_create(
+#   name = "S2W Convos",
+#   sheets = list(Sheet1 = df_convos) # 'sheets' argument takes a list of data frames
+# )
+```
+
+## Logic to Clean Tags
+
+```{r}
+# Clean Tag Data - Can update this logic later
+texted_with_vf_info <- left_join(s2w_results, vf_clean, by='voter_id')
+#table(texted_with_vf_info$Tags)
+
+texted_with_vf_info <- texted_with_vf_info %>% 
+  mutate(tags_reconciled = ifelse(grepl('no', tolower(Tags)), "No", ifelse(grepl('Maybe', Tags), "Maybe", ifelse(grepl("Yes", Tags), "Yes", Tags))))#%>%
+  # filter(!is.na(Tags)) %>% 
+  # select(Tags, tags_reconciled) %>% 
+  # group_by(Tags, tags_reconciled) %>% 
+  # summarise(n=n()) %>% 
+  # arrange(desc(n))
+```
+## Convert Addresses to Lat/Long for Tagged Respondents
+
+Should we include OPT OUTS here too??
+
+```{r}
+# Convert addresses to lat/long coordinates
+df_adds_to_convert <- texted_with_vf_info  %>% 
+  filter(!is.na(tags_reconciled)) %>% 
+  mutate(full_address = paste(address_number, ' ', street_name, ' ', town_name.y, ', ', state, ' ', zip5 , sep = ''))
+
+add_lat_long <- function(df_adds){   
+  batch_size <- 500
+  batches <- split(df_adds, ceiling(seq_len(nrow(df_adds)) / batch_size))
+  
+  results <- purrr::map_dfr(batches, ~{
+    Sys.sleep(0.2)        # optional
+   tidygeocoder::geocode(
+        .x,      
+        address = full_address,
+        method = "osm", #Capitalization matters!  # osm: Uses OpenStreetMap's Nominatim API, census: Good for well-formatted, U.S. addresses #ArcGIS
+        # full_results = TRUE # Gives confidence 0-100
+      ) %>%
+      rename(lat_osm = lat, long_osm = long) 
+  })
+  return(results)
+} 
+
+texted_with_vf_info_lat_long <- add_lat_long(df_adds_to_convert)
+second_conversion <- add_lat_long(texted_with_vf_info_lat_long %>% filter(is.na(lat_census)))
+
+df_map_lat_long <- left_join(texted_with_vf_info_lat_long, second_conversion %>% select(voter_id, lat_osm, long_osm), by = join_by(voter_id)) 
+
+df_map_lat_long_no_NA <- df_map_lat_long %>% mutate(lat = coalesce(lat_census, lat_osm), long = coalesce(long_census, long_osm)) %>% filter(!is.na(lat))
+```
+
+```{r}
+c_map <- c(
+  "Yes"   = "green",   
+  "Maybe" = "orange",     
+  "No"    = "darkred",     
+  "INFO"  = "blue"        
+)
+
+icons <- awesomeIcons(
+  icon = "user",
+  iconColor = "white",
+  markerColor = unname(c_map[as.character(df_map_lat_long_no_NA$tags_reconciled)]) #Removes the name from a vector
+)
+
+df_map_lat_long_no_NA %>% 
+  leaflet() %>%
+    addTiles() %>%
+    addAwesomeMarkers(
+      lng = ~long, 
+      lat = ~lat,
+      icon = icons,
+      popup = ~paste0("<b>Address:</b> ", full_address, "<br>",
+                "<b>Age:</b> ", age.y, "<br>",
+                "<b>Gender:</b> ", gender.y, "<br>",
+                "<b>Town:</b> ", town_name.y, "<br>",
+                "<b>Voter ID:</b> ", voter_id, "<br>",
+                "<b>First:</b> ", first_name.y, "<br>",
+                "<b>Last:</b> ", last_name.y, "<br>",
+                "<b>Tag:</b>", tags_reconciled)
+    )
+```
+
+
