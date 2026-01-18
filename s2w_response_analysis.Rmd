@@ -114,7 +114,7 @@ texted_with_vf_info %>%
   pull(tags_reconciled_OPTOUTS) %>% table() %>% prop.table() %>% round(.,5)
 ```
 
-# Mapping
+# Mapping Tagged Individuals
 
 ## Convert Addresses to Lat/Long for Tagged Respondents
 
@@ -126,29 +126,36 @@ df_adds_to_convert <- texted_with_vf_info  %>%
   filter(!is.na(tags_reconciled)) %>% 
   mutate(full_address = paste(address_number, ' ', street_name, ' ', town_name.y, ', ', state, ' ', zip5 , sep = ''))
 
-add_lat_long <- function(df_adds){   
+add_lat_long <- function(df_adds, geo_method){   
   batch_size <- 500
   batches <- split(df_adds, ceiling(seq_len(nrow(df_adds)) / batch_size))
-  
+
   results <- purrr::map_dfr(batches, ~{
     Sys.sleep(0.2)        # optional
    tidygeocoder::geocode(
         .x,      
         address = full_address,
-        method = "osm", #Capitalization matters!  # osm: Uses OpenStreetMap's Nominatim API, census: Good for well-formatted, U.S. addresses #ArcGIS
+        method = "osm" #Capitalization matters!  # osm: Uses OpenStreetMap's Nominatim API, census: Good for well-formatted, U.S. addresses #ArcGIS
         # full_results = TRUE # Gives confidence 0-100
       ) %>%
-      rename(lat_osm = lat, long_osm = long) 
+      rename(!!sym(paste0('lat_', geo_method)) := lat, 
+             !!sym(paste0('long_', geo_method)) := long) 
   })
   return(results)
 } 
 
-texted_with_vf_info_lat_long <- add_lat_long(df_adds_to_convert)
-second_conversion <- add_lat_long(texted_with_vf_info_lat_long %>% filter(is.na(lat_census)))
+texted_with_vf_info_lat_long <- add_lat_long(df_adds_to_convert, "census")
 
-df_map_lat_long <- left_join(texted_with_vf_info_lat_long, second_conversion %>% select(voter_id, lat_osm, long_osm), by = join_by(voter_id)) 
+second_conversion_osm <- add_lat_long(texted_with_vf_info_lat_long %>% filter(is.na(lat_census)), "osm")
 
-df_map_lat_long_no_NA <- df_map_lat_long %>% mutate(lat = coalesce(lat_census, lat_osm), long = coalesce(long_census, long_osm)) %>% filter(!is.na(lat))
+df_map_lat_long_no_NA <- left_join(
+  texted_with_vf_info_lat_long, 
+  second_conversion %>% select(voter_id, lat_osm, long_osm), 
+  by = join_by(voter_id)
+  ) %>% 
+    mutate(lat = coalesce(lat_census, lat_osm), 
+           long = coalesce(long_census, long_osm)) %>% 
+    filter(!is.na(lat))
 ```
 
 ```{r}
@@ -183,7 +190,6 @@ map_tagged_s2w_respondents <- df_map_lat_long_no_NA %>%
     )
 
 saveWidget(map_tagged_s2w_respondents, "s2w_tagged_respondents_20260117.html", selfcontained = TRUE)
-
 ```
 
 ## Mapping Yeses By Town
@@ -200,6 +206,8 @@ by = join_by("town_name.y" == "name")
 
 pal_count <- colorNumeric("Greens", yes_tags_by_town_geo$n_indiv, na.color = "transparent")
 
+town_centroids <- st_centroid(yes_tags_by_town_geo)
+
 m <- leaflet(yes_tags_by_town_geo) %>%
   addProviderTiles("CartoDB.Positron") %>%
   
@@ -214,9 +222,83 @@ m <- leaflet(yes_tags_by_town_geo) %>%
   addLegend(
     "bottomright", pal = pal_count, values = ~n_indiv,
     title = "Number of Yes Responses", group = "Number of Yes Responses"
+  ) %>%
+  addLabelOnlyMarkers(
+    data = town_centroids,
+    label = ~n_indiv,
+    labelOptions = labelOptions(
+      noHide = TRUE,          # always show
+      direction = 'center',   # center text
+      textOnly = TRUE,        # no marker icon
+      style = list(
+        "color" = "black",
+        "font-size" = "15px",
+        "font-weight" = "bold"
+        #"text-shadow" = "1px 1px 3px white"
+      )
+    )
   )
 
 saveWidget(m, "map_yes_tags_by_town.html", selfcontained = TRUE)
 
+```
+
+
+## Mapping Yeses By Town - Circles
+
+```{r}
+library(scales)
+oped_yes_tags_by_town_geo <- left_join(
+texted_with_vf_info %>% 
+  filter(!(tags_reconciled_OPTOUTS %in% c('No_Tag', 'Opt_Out'))) %>%
+  group_by(tags_reconciled_OPTOUTS, town_name.y) %>%
+  summarise(n_indiv=n()) %>%
+  pivot_wider(names_from = tags_reconciled_OPTOUTS, values_from = n_indiv) %>% 
+  group_by(town_name.y) %>%
+  mutate(p_yes = Yes/sum(Yes, No, Maybe, INFO, na.rm = TRUE)) %>% ungroup() %>%
+  mutate(rank = rank(-p_yes, ties.method = "min"),
+         radius = rescale(sqrt(p_yes), to=c(5,30))), # rescale() is key to make them gradually smaller
+town_sf, 
+by = join_by("town_name.y" == "name")
+) %>% st_as_sf(sf_column_name = 'geometry') %>% st_transform(crs=4326) # 4326 = WGS84 lat/lon
+
+town_centroids <- st_centroid(oped_yes_tags_by_town_geo)
+
+m <- leaflet(town_centroids) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  # First layer: Number of VF Records
+  addCircleMarkers(
+    fillOpacity = 0.7,
+    radius = ~p_yes*10*(1+(1/rank)),
+    fillColor = "steelblue",
+    group = "Number of Yes Responses",
+    popup = ~paste0("<b>Town: ", town_name.y, "</b><br>",
+                    "<b>Rank: ", rank, "</b>" )
+  ) %>%   
+  addLabelOnlyMarkers(
+    data = town_centroids,
+    label = ~town_name.y,
+    labelOptions = labelOptions(
+      noHide = TRUE,          # always show
+      direction = 'center',   # center text
+      textOnly = TRUE,        # no marker icon
+      style = list(
+        "color" = "black",
+        "font-size" = "15px",
+        "font-weight" = "bold"
+        #"text-shadow" = "1px 1px 3px white"
+      )
+    )
+  )
+m
+#saveWidget(m, "map_yes_tags_by_town.html", selfcontained = TRUE)
+
+```
+
+
+```{r}
+vf_clean %>% filter(last_name == 'Kelly' & first_name == 'Kathryn')
+
+texted_with_vf_info %>% filter(last_name.y == 'Kelly'& first_name.x == 'Kathryn')
 ```
 
