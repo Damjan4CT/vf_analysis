@@ -7,9 +7,18 @@ date: "2026-01-15"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(googlesheets4)
+library(purrr)
+library(tidyverse)
+#remotes::install_github("CT-Data-Haven/cwi")
+library(cwi) # For Town Shapefiles
+library(sf)
+library(leaflet)
+library(htmlwidgets) # to save the map as an html
 ```
 
-```{r}
+## Read in S2W Data
+
+```{r, message=FALSE, warning=FALSE}
 # Read in and Clean ALL S2W CSVs
 s2w_replies_file_paths <- list.files(
   path = r"(C:\Users\Ruairi\Documents\Coding Projects 2025\ct04_testing\S2W Replies and Responses Jan 15 6pm)",
@@ -32,14 +41,15 @@ s2w_results <- map_dfr(s2w_results_file_paths, read_csv, .id = "source_file")
 
 ```
 
+## Send Clean Convos to Send to Google Sheets
 
 ```{r GoogleSheetTransferQual}
-df_convos <- left_join(s2w_results, s2w_replies_grouped_by_msg, by = "Contact Phone Number") %>% 
-  select(
-    -c(`source_file`, `Campaign ID`, `Carrier`, `Contact Script Message Type`, `Contact Script Media URL`, `Contact Script Variant ID`, `Donation Amount`)
-    ) %>%
-  arrange(desc(n), full_convo) %>% 
-  filter(n > 1)
+# df_convos <- left_join(s2w_results, s2w_replies_grouped_by_msg, by = "Contact Phone Number") %>% 
+#   select(
+#     -c(`source_file`, `Campaign ID`, `Carrier`, `Contact Script Message Type`, `Contact Script Media URL`, `Contact Script Variant ID`, `Donation Amount`)
+#     ) %>%
+#   arrange(desc(n), full_convo) %>% 
+#   filter(n > 1)
 
 # gs4_create(
 #   name = "S2W Convos",
@@ -47,7 +57,7 @@ df_convos <- left_join(s2w_results, s2w_replies_grouped_by_msg, by = "Contact Ph
 # )
 ```
 
-## Logic to Clean Tags
+## Cleaning Tags
 
 ```{r}
 # Clean Tag Data - Can update this logic later
@@ -55,13 +65,57 @@ texted_with_vf_info <- left_join(s2w_results, vf_clean, by='voter_id')
 #table(texted_with_vf_info$Tags)
 
 texted_with_vf_info <- texted_with_vf_info %>% 
-  mutate(tags_reconciled = ifelse(grepl('no', tolower(Tags)), "No", ifelse(grepl('Maybe', Tags), "Maybe", ifelse(grepl("Yes", Tags), "Yes", Tags))))#%>%
+  mutate(tags_reconciled = 
+           ifelse(grepl('no', tolower(Tags)), "No", 
+                  ifelse(grepl('Maybe', Tags), "Maybe",
+                         ifelse(grepl("Yes", Tags), "Yes", 
+                                Tags)))) %>%
+   mutate(tags_reconciled_OPTOUTS = 
+            ifelse(`Campaign Opt-Out Status` == TRUE, "Opt_Out", 
+                   ifelse(grepl('no', tolower(Tags)), "No", 
+                          ifelse(grepl('Maybe', Tags), "Maybe", 
+                                 ifelse(grepl("Yes", Tags), "Yes", 
+                                        coalesce(Tags, 'No_Tag')))))) 
   # filter(!is.na(Tags)) %>% 
   # select(Tags, tags_reconciled) %>% 
   # group_by(Tags, tags_reconciled) %>% 
   # summarise(n=n()) %>% 
   # arrange(desc(n))
 ```
+
+## Basic Analysis
+
+```{r}
+# Tags by Strata
+texted_with_vf_info %>% 
+  filter(tags_reconciled_OPTOUTS != 'INFO') %>%
+  group_by(strata, tags_reconciled_OPTOUTS) %>%
+  summarise(n = n()) %>% 
+  pivot_wider(names_from = tags_reconciled_OPTOUTS, values_from = n) %>%
+  mutate(total_texted = sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),
+         p_maybe = round(100*Maybe/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1),
+         p_yes = round(100*Yes/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1),
+         p_no = round(100*No/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1),
+         p_optout = round(100*Opt_Out/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1)
+         ) %>%
+  mutate(ratio = Yes/(No+Opt_Out)) #%>% select(-c(Maybe,Yes,No,Opt_Out, No_Tag))
+
+
+# Gender Comparison
+prop.table(table(vf_clean$gender))
+prop.table(table(texted_with_vf_info$gender.y))
+
+# Tag Top-lines
+texted_with_vf_info %>% 
+  pull(tags_reconciled_OPTOUTS) %>% table() %>% prop.table() %>% round(.,5)
+
+texted_with_vf_info %>% 
+  filter(tags_reconciled_OPTOUTS != 'No_Tag') %>%
+  pull(tags_reconciled_OPTOUTS) %>% table() %>% prop.table() %>% round(.,5)
+```
+
+# Mapping
+
 ## Convert Addresses to Lat/Long for Tagged Respondents
 
 Should we include OPT OUTS here too??
@@ -111,7 +165,7 @@ icons <- awesomeIcons(
   markerColor = unname(c_map[as.character(df_map_lat_long_no_NA$tags_reconciled)]) #Removes the name from a vector
 )
 
-df_map_lat_long_no_NA %>% 
+map_tagged_s2w_respondents <- df_map_lat_long_no_NA %>% 
   leaflet() %>%
     addTiles() %>%
     addAwesomeMarkers(
@@ -127,6 +181,42 @@ df_map_lat_long_no_NA %>%
                 "<b>Last:</b> ", last_name.y, "<br>",
                 "<b>Tag:</b>", tags_reconciled)
     )
+
+saveWidget(map_tagged_s2w_respondents, "s2w_tagged_respondents_20260117.html", selfcontained = TRUE)
+
 ```
 
+## Mapping Yeses By Town
+
+```{r}
+yes_tags_by_town_geo <- left_join(
+texted_with_vf_info %>% 
+  filter(tags_reconciled_OPTOUTS == 'Yes') %>%
+  group_by(town_name.y) %>%
+  summarise(n_indiv=n()),
+town_sf, 
+by = join_by("town_name.y" == "name")
+) %>% st_as_sf(sf_column_name = 'geometry') %>% st_transform(crs=4326) # 4326 = WGS84 lat/lon
+
+pal_count <- colorNumeric("Greens", yes_tags_by_town_geo$n_indiv, na.color = "transparent")
+
+m <- leaflet(yes_tags_by_town_geo) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  
+  # First layer: Number of VF Records
+  addPolygons(
+    fillColor = ~pal_count(n_indiv),
+    color = "white", weight = 1, fillOpacity = 0.7,
+    group = "Number of Yes Responses",
+    popup = ~paste0("<b>", town_name.y, "</b><br>",
+                    "n: ",n_indiv)
+  ) %>%   
+  addLegend(
+    "bottomright", pal = pal_count, values = ~n_indiv,
+    title = "Number of Yes Responses", group = "Number of Yes Responses"
+  )
+
+saveWidget(m, "map_yes_tags_by_town.html", selfcontained = TRUE)
+
+```
 
