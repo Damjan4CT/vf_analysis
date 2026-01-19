@@ -1,11 +1,14 @@
 ---
 title: "s2w_response_analysis"
-output: pdf_document
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
 date: "2026-01-15"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(googlesheets4)
 library(purrr)
 library(tidyverse)
@@ -14,9 +17,13 @@ library(cwi) # For Town Shapefiles
 library(sf)
 library(leaflet)
 library(htmlwidgets) # to save the map as an html
+library(kableExtra)
 ```
 
-## Read in S2W Data
+```{r}
+## Read in Data (S2W and Voterfile)
+vf_clean <- read.csv("C:/Users/Ruairi/Documents/Coding Projects 2025/ct04_testing/clean_vf_with_history.csv")
+```
 
 ```{r, message=FALSE, warning=FALSE}
 # Read in and Clean ALL S2W CSVs
@@ -41,9 +48,10 @@ s2w_results <- map_dfr(s2w_results_file_paths, read_csv, .id = "source_file")
 
 ```
 
-## Send Clean Convos to Send to Google Sheets
 
 ```{r GoogleSheetTransferQual}
+## Send Clean Convos to Send to Google Sheets
+
 # df_convos <- left_join(s2w_results, s2w_replies_grouped_by_msg, by = "Contact Phone Number") %>% 
 #   select(
 #     -c(`source_file`, `Campaign ID`, `Carrier`, `Contact Script Message Type`, `Contact Script Media URL`, `Contact Script Variant ID`, `Donation Amount`)
@@ -57,9 +65,10 @@ s2w_results <- map_dfr(s2w_results_file_paths, read_csv, .id = "source_file")
 # )
 ```
 
+
+```{r, echo = TRUE}
 ## Cleaning Tags
 
-```{r}
 # Clean Tag Data - Can update this logic later
 texted_with_vf_info <- left_join(s2w_results, vf_clean, by='voter_id')
 #table(texted_with_vf_info$Tags)
@@ -83,118 +92,89 @@ texted_with_vf_info <- texted_with_vf_info %>%
   # arrange(desc(n))
 ```
 
-## Basic Analysis
+
 
 ```{r}
-# Tags by Strata
-texted_with_vf_info %>% 
-  filter(tags_reconciled_OPTOUTS != 'INFO') %>%
-  group_by(strata, tags_reconciled_OPTOUTS) %>%
-  summarise(n = n()) %>% 
-  pivot_wider(names_from = tags_reconciled_OPTOUTS, values_from = n) %>%
-  mutate(total_texted = sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),
-         p_maybe = round(100*Maybe/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1),
-         p_yes = round(100*Yes/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1),
-         p_no = round(100*No/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1),
-         p_optout = round(100*Opt_Out/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1)
-         ) %>%
-  mutate(ratio = Yes/(No+Opt_Out)) #%>% select(-c(Maybe,Yes,No,Opt_Out, No_Tag))
-
-
-# Gender Comparison
-prop.table(table(vf_clean$gender))
-prop.table(table(texted_with_vf_info$gender.y))
-
-# Tag Top-lines
-texted_with_vf_info %>% 
-  pull(tags_reconciled_OPTOUTS) %>% table() %>% prop.table() %>% round(.,5)
-
-texted_with_vf_info %>% 
-  filter(tags_reconciled_OPTOUTS != 'No_Tag') %>%
-  pull(tags_reconciled_OPTOUTS) %>% table() %>% prop.table() %>% round(.,5)
-```
-
 # Mapping Tagged Individuals
-
 ## Convert Addresses to Lat/Long for Tagged Respondents
+####Should we include OPT OUTS here too??
 
-Should we include OPT OUTS here too??
-
-```{r}
 # Convert addresses to lat/long coordinates
-df_adds_to_convert <- texted_with_vf_info  %>% 
-  filter(!is.na(tags_reconciled)) %>% 
-  mutate(full_address = paste(address_number, ' ', street_name, ' ', town_name.y, ', ', state, ' ', zip5 , sep = ''))
-
-add_lat_long <- function(df_adds, geo_method){   
-  batch_size <- 500
-  batches <- split(df_adds, ceiling(seq_len(nrow(df_adds)) / batch_size))
-
-  results <- purrr::map_dfr(batches, ~{
-    Sys.sleep(0.2)        # optional
-   tidygeocoder::geocode(
-        .x,      
-        address = full_address,
-        method = "osm" #Capitalization matters!  # osm: Uses OpenStreetMap's Nominatim API, census: Good for well-formatted, U.S. addresses #ArcGIS
-        # full_results = TRUE # Gives confidence 0-100
-      ) %>%
-      rename(!!sym(paste0('lat_', geo_method)) := lat, 
-             !!sym(paste0('long_', geo_method)) := long) 
-  })
-  return(results)
-} 
-
-texted_with_vf_info_lat_long <- add_lat_long(df_adds_to_convert, "census")
-
-second_conversion_osm <- add_lat_long(texted_with_vf_info_lat_long %>% filter(is.na(lat_census)), "osm")
-
-df_map_lat_long_no_NA <- left_join(
-  texted_with_vf_info_lat_long, 
-  second_conversion %>% select(voter_id, lat_osm, long_osm), 
-  by = join_by(voter_id)
-  ) %>% 
-    mutate(lat = coalesce(lat_census, lat_osm), 
-           long = coalesce(long_census, long_osm)) %>% 
-    filter(!is.na(lat))
+# df_adds_to_convert <- texted_with_vf_info  %>% 
+#   filter(!is.na(tags_reconciled)) %>% 
+#   mutate(full_address = paste(address_number, ' ', street_name, ' ', town_name.y, ', ', state, ' ', zip5 , sep = ''))
+# 
+# add_lat_long <- function(df_adds, geo_method){   
+#   batch_size <- 500
+#   batches <- split(df_adds, ceiling(seq_len(nrow(df_adds)) / batch_size))
+# 
+#   results <- purrr::map_dfr(batches, ~{
+#     Sys.sleep(0.2)        # optional
+#    tidygeocoder::geocode(
+#         .x,      
+#         address = full_address,
+#         method = "osm" #Capitalization matters!  # osm: Uses OpenStreetMap's Nominatim API, census: Good for well-formatted, U.S. addresses #ArcGIS
+#         # full_results = TRUE # Gives confidence 0-100
+#       ) %>%
+#       rename(!!sym(paste0('lat_', geo_method)) := lat, 
+#              !!sym(paste0('long_', geo_method)) := long) 
+#   })
+#   return(results)
+# } 
+# 
+# texted_with_vf_info_lat_long <- add_lat_long(df_adds_to_convert, "census")
+# 
+# second_conversion_osm <- add_lat_long(texted_with_vf_info_lat_long %>% filter(is.na(lat_census)), "osm")
+# 
+# df_map_lat_long_no_NA <- left_join(
+#   texted_with_vf_info_lat_long, 
+#   second_conversion %>% select(voter_id, lat_osm, long_osm), 
+#   by = join_by(voter_id)
+#   ) %>% 
+#     mutate(lat = coalesce(lat_census, lat_osm), 
+#            long = coalesce(long_census, long_osm)) %>% 
+#     filter(!is.na(lat))
 ```
 
 ```{r}
-c_map <- c(
-  "Yes"   = "green",   
-  "Maybe" = "orange",     
-  "No"    = "darkred",     
-  "INFO"  = "blue"        
-)
+## Put tagged individuals into a map
 
-icons <- awesomeIcons(
-  icon = "user",
-  iconColor = "white",
-  markerColor = unname(c_map[as.character(df_map_lat_long_no_NA$tags_reconciled)]) #Removes the name from a vector
-)
-
-map_tagged_s2w_respondents <- df_map_lat_long_no_NA %>% 
-  leaflet() %>%
-    addTiles() %>%
-    addAwesomeMarkers(
-      lng = ~long, 
-      lat = ~lat,
-      icon = icons,
-      popup = ~paste0("<b>Address:</b> ", full_address, "<br>",
-                "<b>Age:</b> ", age.y, "<br>",
-                "<b>Gender:</b> ", gender.y, "<br>",
-                "<b>Town:</b> ", town_name.y, "<br>",
-                "<b>Voter ID:</b> ", voter_id, "<br>",
-                "<b>First:</b> ", first_name.y, "<br>",
-                "<b>Last:</b> ", last_name.y, "<br>",
-                "<b>Tag:</b>", tags_reconciled)
-    )
-
-saveWidget(map_tagged_s2w_respondents, "s2w_tagged_respondents_20260117.html", selfcontained = TRUE)
+# c_map <- c(
+#   "Yes"   = "green",   
+#   "Maybe" = "orange",     
+#   "No"    = "darkred",     
+#   "INFO"  = "blue"        
+# )
+# 
+# icons <- awesomeIcons(
+#   icon = "user",
+#   iconColor = "white",
+#   markerColor = unname(c_map[as.character(df_map_lat_long_no_NA$tags_reconciled)]) #Removes the name from a vector
+# )
+# 
+# map_tagged_s2w_respondents <- df_map_lat_long_no_NA %>% 
+#   leaflet() %>%
+#     addTiles() %>%
+#     addAwesomeMarkers(
+#       lng = ~long, 
+#       lat = ~lat,
+#       icon = icons,
+#       popup = ~paste0("<b>Address:</b> ", full_address, "<br>",
+#                 "<b>Age:</b> ", age.y, "<br>",
+#                 "<b>Gender:</b> ", gender.y, "<br>",
+#                 "<b>Town:</b> ", town_name.y, "<br>",
+#                 "<b>Voter ID:</b> ", voter_id, "<br>",
+#                 "<b>First:</b> ", first_name.y, "<br>",
+#                 "<b>Last:</b> ", last_name.y, "<br>",
+#                 "<b>Tag:</b>", tags_reconciled)
+#     )
+# 
+# saveWidget(map_tagged_s2w_respondents, "s2w_tagged_respondents_20260117.html", selfcontained = TRUE)
 ```
 
-## Mapping Yeses By Town
-
 ```{r}
+## Mapping Yeses By Town (with town shapefiles)
+
 yes_tags_by_town_geo <- left_join(
 texted_with_vf_info %>% 
   filter(tags_reconciled_OPTOUTS == 'Yes') %>%
@@ -243,33 +223,39 @@ saveWidget(m, "map_yes_tags_by_town.html", selfcontained = TRUE)
 
 ```
 
-
 ## Mapping Yeses By Town - Circles
 
 ```{r}
 library(scales)
-oped_yes_tags_by_town_geo <- left_join(
-texted_with_vf_info %>% 
-  filter(!(tags_reconciled_OPTOUTS %in% c('No_Tag', 'Opt_Out'))) %>%
+df_tag_data_by_town_radius <- texted_with_vf_info %>% 
+  filter(!(tags_reconciled_OPTOUTS %in% c('No_Tag'))) %>%
   group_by(tags_reconciled_OPTOUTS, town_name.y) %>%
   summarise(n_indiv=n()) %>%
   pivot_wider(names_from = tags_reconciled_OPTOUTS, values_from = n_indiv) %>% 
   group_by(town_name.y) %>%
-  mutate(p_yes = Yes/sum(Yes, No, Maybe, INFO, na.rm = TRUE)) %>% ungroup() %>%
+  mutate(p_yes = Yes/sum(Yes, No, Maybe, INFO, Opt_Out, na.rm = TRUE)) %>% ungroup() %>%
   mutate(rank = rank(-p_yes, ties.method = "min"),
-         radius = rescale(sqrt(p_yes), to=c(5,30))), # rescale() is key to make them gradually smaller
-town_sf, 
-by = join_by("town_name.y" == "name")
-) %>% st_as_sf(sf_column_name = 'geometry') %>% st_transform(crs=4326) # 4326 = WGS84 lat/lon
+         radius = rescale(sqrt(p_yes), to=c(10,45)))
 
-town_centroids <- st_centroid(oped_yes_tags_by_town_geo)
+df_tag_data_by_town_radius %>% mutate(town = town_name.y, p_yes = paste0(round(100*p_yes, 1), '%')) %>% select(-c(radius)) %>% arrange(rank) %>% 
+  select(town, rank, p_yes, Yes, Maybe, INFO, No, Opt_Out)
 
-m <- leaflet(town_centroids) %>%
+df_geo_tag_data_by_town_radius <- left_join(
+    df_tag_data_by_town_radius, # rescale is key to make them gradually smaller
+    town_sf, 
+    by = join_by("town_name.y" == "name")
+  ) %>% 
+  st_as_sf(sf_column_name = 'geometry') %>% 
+  st_transform(crs=4326) # 4326 = WGS84 lat/lon
+
+town_centroids <- st_centroid(df_geo_tag_data_by_town_radius)
+
+circle_map_yes_tags <- leaflet(town_centroids) %>%
   addProviderTiles("CartoDB.Positron") %>%
   # First layer: Number of VF Records
   addCircleMarkers(
     fillOpacity = 0.7,
-    radius = ~p_yes*10*(1+(1/rank)),
+    radius = ~radius,
     fillColor = "steelblue",
     group = "Number of Yes Responses",
     popup = ~paste0("<b>Town: ", town_name.y, "</b><br>",
@@ -290,15 +276,156 @@ m <- leaflet(town_centroids) %>%
       )
     )
   )
-m
-#saveWidget(m, "map_yes_tags_by_town.html", selfcontained = TRUE)
 
+circle_map_yes_tags
+
+saveWidget(circle_map_yes_tags, "circle_map_yes_tags.html", selfcontained = TRUE)
 ```
 
+#### Further Breakdown by Town
+
+```{r, echo = FALSE}
+town_analysis <- texted_with_vf_info %>% 
+  group_by(town_name.y) %>% 
+  summarise(n=n(), 
+            yes = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE),
+            no = sum(tags_reconciled_OPTOUTS == 'No', na.rm = TRUE),
+            notag = sum(tags_reconciled_OPTOUTS == 'No_Tag', na.rm = TRUE),
+            optout = sum(tags_reconciled_OPTOUTS == 'Opt_Out', na.rm = TRUE),
+            maybe = sum(tags_reconciled_OPTOUTS == 'Maybe', na.rm = TRUE),
+            info = sum(tags_reconciled_OPTOUTS == 'INFO', na.rm = TRUE),
+            p_yes_texted = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE)/n(),
+            p_yes_responded = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE)/ sum(tags_reconciled_OPTOUTS %in% c('Yes','No','Maybe','INFO','Opt_Out'), na.rm=TRUE),
+             p_yes_responded_no_optout = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE)/ sum(tags_reconciled_OPTOUTS %in% c('Yes','No','Maybe','INFO'), na.rm=TRUE), 
+            response_rate = sum(tags_reconciled_OPTOUTS %in% c('Yes','No','Maybe','INFO','Opt_Out'), na.rm = TRUE)/ n(),
+            opt_out_rate = sum(tags_reconciled_OPTOUTS %in% c('Opt_Out'), na.rm = TRUE)/ n()
+            )
+
+town_analysis %>% mutate(p_yes_texted = paste0(round(100*p_yes_texted, 1), '%'),
+                        p_yes_responded = paste0(round(100*p_yes_responded, 1), '%'),
+                        p_yes_responded_no_optout = paste0(round(100*p_yes_responded_no_optout, 1), '%'),
+                        response_rate = paste0(round(100*response_rate, 1), '%'),
+                        opt_out_rate = paste0(round(100*opt_out_rate, 1), '%'),
+                        town = town_name.y
+                        ) %>%
+  select(town, p_yes_texted, p_yes_responded, p_yes_responded_no_optout, response_rate, opt_out_rate, n, yes, maybe, info, no, optout, notag)
+```
+
+## Age Analysis
 
 ```{r}
-vf_clean %>% filter(last_name == 'Kelly' & first_name == 'Kathryn')
+age_analysis <- texted_with_vf_info %>% 
+  group_by(age_bracket) %>% 
+  summarise(n=n(), 
+            yes = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE),
+            no = sum(tags_reconciled_OPTOUTS == 'No', na.rm = TRUE),
+            notag = sum(tags_reconciled_OPTOUTS == 'No_Tag', na.rm = TRUE),
+            optout = sum(tags_reconciled_OPTOUTS == 'Opt_Out', na.rm = TRUE),
+            maybe = sum(tags_reconciled_OPTOUTS == 'Maybe', na.rm = TRUE),
+            info = sum(tags_reconciled_OPTOUTS == 'INFO', na.rm = TRUE),
+            p_yes_texted = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE)/n(),
+            p_yes_responded = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE)/ sum(tags_reconciled_OPTOUTS %in% c('Yes','No','Maybe','INFO','Opt_Out'), na.rm=TRUE),
+             p_yes_responded_no_optout = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE)/ sum(tags_reconciled_OPTOUTS %in% c('Yes','No','Maybe','INFO'), na.rm=TRUE), 
+            response_rate = sum(tags_reconciled_OPTOUTS %in% c('Yes','No','Maybe','INFO','Opt_Out'), na.rm = TRUE)/ n(),
+            opt_out_rate = sum(tags_reconciled_OPTOUTS %in% c('Opt_Out'), na.rm = TRUE)/ n()
+            )
 
-texted_with_vf_info %>% filter(last_name.y == 'Kelly'& first_name.x == 'Kathryn')
+age_analysis %>% mutate(p_yes_texted = paste0(round(100*p_yes_texted, 1), '%'),
+                        p_yes_responded = paste0(round(100*p_yes_responded, 1), '%'),
+                        p_yes_responded_no_optout = paste0(round(100*p_yes_responded_no_optout, 1), '%'),
+                        response_rate = paste0(round(100*response_rate, 1), '%'),
+                        opt_out_rate = paste0(round(100*opt_out_rate, 1), '%'),
+                        ) %>%
+  select(age_bracket, p_yes_texted, p_yes_responded, p_yes_responded_no_optout, response_rate, opt_out_rate, n, yes, maybe, info, no, optout, notag)
+
+library(ggplot2)
+ggplot(age_analysis) +
+  geom_bar(aes(x=age_bracket, y=round(100*p_yes_responded,1), fill = age_bracket), stat = 'identity') + 
+  geom_text(aes(x = age_bracket, y = round(100*p_yes_responded,1), label = paste0(round(100*p_yes_responded,1),'%')), vjust = -0.5) +
+  labs(x = 'Age Bracket', y = '% Respondents Who Replied Yes') + 
+  scale_fill_brewer(palette = 'Set2') +
+  theme(legend.position = "none") + 
+  ggtitle("'Yes' Tags x Age Bracket Among Respondents")
 ```
 
+## Gender Analysis
+
+```{r}
+# Gender Comparison
+# prop.table(table(vf_clean$gender))
+# prop.table(table(texted_with_vf_info$gender.y))
+
+gender_analysis <- texted_with_vf_info %>% 
+  mutate(gender = gender.y) %>%
+  group_by(gender) %>% 
+  summarise(n=n(), 
+            yes = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE),
+            no = sum(tags_reconciled_OPTOUTS == 'No', na.rm = TRUE),
+            notag = sum(tags_reconciled_OPTOUTS == 'No_Tag', na.rm = TRUE),
+            optout = sum(tags_reconciled_OPTOUTS == 'Opt_Out', na.rm = TRUE),
+            maybe = sum(tags_reconciled_OPTOUTS == 'Maybe', na.rm = TRUE),
+            info = sum(tags_reconciled_OPTOUTS == 'INFO', na.rm = TRUE),
+            p_yes_texted = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE)/n(),
+            p_yes_responded = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE)/ sum(tags_reconciled_OPTOUTS %in% c('Yes','No','Maybe','INFO','Opt_Out'), na.rm=TRUE),
+             p_yes_responded_no_optout = sum(tags_reconciled_OPTOUTS == 'Yes', na.rm = TRUE)/ sum(tags_reconciled_OPTOUTS %in% c('Yes','No','Maybe','INFO'), na.rm=TRUE), 
+            response_rate = sum(tags_reconciled_OPTOUTS %in% c('Yes','No','Maybe','INFO','Opt_Out'), na.rm = TRUE)/ n(),
+            opt_out_rate = sum(tags_reconciled_OPTOUTS %in% c('Opt_Out'), na.rm = TRUE)/ n()
+            )
+
+gender_analysis %>% mutate(p_yes_texted = paste0(round(100*p_yes_texted, 1), '%'),
+                        p_yes_responded = paste0(round(100*p_yes_responded, 1), '%'),
+                        p_yes_responded_no_optout = paste0(round(100*p_yes_responded_no_optout, 1), '%'),
+                        response_rate = paste0(round(100*response_rate, 1), '%'),
+                        opt_out_rate = paste0(round(100*opt_out_rate, 1), '%'),
+                        ) %>%
+  select(gender, p_yes_texted, p_yes_responded, p_yes_responded_no_optout, response_rate, opt_out_rate, n, yes, maybe, info, no, optout, notag)
+
+ggplot(gender_analysis) +
+  geom_bar(aes(x=gender, y=round(100*p_yes_responded,1), fill = gender), stat = 'identity') + 
+  geom_text(aes(x = gender, y = round(100*p_yes_responded,1), label = paste0(round(100*p_yes_responded,1),'%')), vjust = -0.5) +
+  labs(x = 'Gender', y = '% Respondents Who Replied Yes') + 
+  scale_fill_brewer(palette = 'Set1') +
+  theme(legend.position = "none") + 
+  ggtitle("'Yes' Tags x Gender Among Respondents")
+```
+
+## Strata Analysis
+
+```{r}
+# Tags by Strata
+texted_with_vf_info %>% 
+  filter(tags_reconciled_OPTOUTS != 'INFO') %>%
+  group_by(strata, tags_reconciled_OPTOUTS) %>%
+  summarise(n = n()) %>% 
+  pivot_wider(names_from = tags_reconciled_OPTOUTS, values_from = n) %>%
+  mutate(total_texted = sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),
+         p_maybe = coalesce(round(100*Maybe/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1),0),
+         p_yes = coalesce(round(100*Yes/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1),0),
+         p_no = coalesce(round(100*No/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1),0),
+         p_optout = coalesce(round(100*Opt_Out/sum(Maybe,Yes,No,Opt_Out,No_Tag, na.rm = TRUE),1),0)
+         ) %>%
+  mutate(ratio = coalesce(Yes,0)/(coalesce(No,0)+coalesce(Opt_Out,0))) %>% select(-c(Maybe,Yes,No,Opt_Out, No_Tag))
+
+# Tag Top-lines
+texted_with_vf_info %>% 
+  pull(tags_reconciled_OPTOUTS) %>% table() %>% prop.table() %>% data.frame() %>% 
+  setNames(c('Tag', 'p')) %>%
+  mutate(Percent = paste0(round(p*100, 3), '%')) %>% 
+  arrange(desc(p)) %>%
+  select(Tag, Percent) %>%
+  kbl(caption='Tags as a Proportion of Individuals Texted') %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = FALSE, font_size = 20) %>%
+  column_spec(1, bold = TRUE)
+
+texted_with_vf_info %>% 
+  filter(tags_reconciled_OPTOUTS != 'No_Tag') %>%
+  pull(tags_reconciled_OPTOUTS) %>% table() %>% prop.table() %>% data.frame() %>% 
+  setNames(c('Tag', 'p')) %>%
+  mutate(Percent = paste0(round(p*100, 3), '%')) %>% 
+  arrange(desc(p)) %>%
+  select(Tag, Percent) %>%
+  kbl(caption='Tags as a Proportion of Tagged Responses') %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = FALSE, font_size = 20) %>%
+  column_spec(1, bold = TRUE)
+
+```
