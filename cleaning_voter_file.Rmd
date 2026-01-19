@@ -1,8 +1,8 @@
 ---
 title: "clean_voter_file"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 date: "2025-12-24"
 ---
 
@@ -58,7 +58,7 @@ df_voters_clean <- left_join(df_voters %>% rename(voterfile_town_name = town_nam
 
 # Create dataset of one row per voter with all vote history
 vh_by_voter <- df_vh %>% 
-  filter(voter_id != '003772487') %>% #Remove one weird voter_id
+  filter(voter_id != '003772487') %>% #Remove one weird voter_id that is misformatted
   group_by(voter_id, election_date) %>% 
   summarise(n=n()) %>% 
   arrange(voter_id, desc(election_date)) %>% 
@@ -108,7 +108,7 @@ write.csv(df_voters_with_history, 'clean_vf_with_history.csv')
 
 # Old Code for Freq. voter Logic
 
-```{r}
+```{r, echo = FALSE}
 #Previously used this code to find the odd/non-general elections for folks
 
 # vh_by_voter_enhanced <- vh_by_voter %>% mutate(odd_election = ifelse(
@@ -134,9 +134,9 @@ write.csv(df_voters_with_history, 'clean_vf_with_history.csv')
 
 # Topline Stats from Clean DF
 
-```{r}
-prop.table(table(df_voters_with_history$likely_signer))
-prop.table(table(df_voters_with_history %>% filter(status == 'A' & party_code == 'D' ) %>% pull(likely_signer)))
-df_voters_with_history %>% filter(status == 'A' & party_code == 'D' ) %>% nrow()
+```{r, echo = FALSE}
+# prop.table(table(df_voters_with_history$likely_signer))
+# prop.table(table(df_voters_with_history %>% filter(status == 'A' & party_code == 'D' ) %>% pull(likely_signer)))
+# df_voters_with_history %>% filter(status == 'A' & party_code == 'D' ) %>% nrow()
 ```
 
