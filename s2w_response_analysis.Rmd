@@ -18,6 +18,8 @@ library(sf)
 library(leaflet)
 library(htmlwidgets) # to save the map as an html
 library(kableExtra)
+library(scales) # to rescale radius
+
 ```
 
 ```{r}
@@ -28,7 +30,7 @@ vf_clean <- read.csv("C:/Users/Ruairi/Documents/Coding Projects 2025/ct04_testin
 ```{r, message=FALSE, warning=FALSE}
 # Read in and Clean ALL S2W CSVs
 s2w_replies_file_paths <- list.files(
-  path = r"(C:\Users\Ruairi\Documents\Coding Projects 2025\ct04_testing\S2W Replies and Responses Jan 15 6pm)",
+  path = r"(C:\Users\Ruairi\Documents\Coding Projects 2025\ct04_testing\S2W Replies and Responses Jan 19 10pm)",
   pattern = "replies.*\\.csv$", # Matches "replies" or "Replies" followed by anything and ending in .csv
   full.names = TRUE
 )
@@ -40,7 +42,7 @@ s2w_replies_grouped_by_msg <- s2w_replies %>%
   arrange(desc(n))
 
 s2w_results_file_paths <- list.files(
-  path = r"(C:\Users\Ruairi\Documents\Coding Projects 2025\ct04_testing\S2W Replies and Responses Jan 15 6pm)",
+  path = r"(C:\Users\Ruairi\Documents\Coding Projects 2025\ct04_testing\S2W Replies and Responses Jan 19 10pm)",
   pattern = "results.*\\.csv$", # Matches "replies" or "Replies" followed by anything and ending in .csv
   full.names = TRUE
 )
@@ -100,50 +102,51 @@ texted_with_vf_info <- texted_with_vf_info %>%
 ####Should we include OPT OUTS here too??
 
 # Convert addresses to lat/long coordinates
-# df_adds_to_convert <- texted_with_vf_info  %>% 
-#   filter(!is.na(tags_reconciled)) %>% 
+# 
+# df_adds_to_convert <- texted_with_vf_info  %>%
+#   filter(!is.na(tags_reconciled)) %>%
 #   mutate(full_address = paste(address_number, ' ', street_name, ' ', town_name.y, ', ', state, ' ', zip5 , sep = ''))
 # 
-# add_lat_long <- function(df_adds, geo_method){   
-#   batch_size <- 500
+# add_lat_long <- function(df_adds, geo_method){
+#   batch_size <- 250
 #   batches <- split(df_adds, ceiling(seq_len(nrow(df_adds)) / batch_size))
 # 
 #   results <- purrr::map_dfr(batches, ~{
 #     Sys.sleep(0.2)        # optional
 #    tidygeocoder::geocode(
-#         .x,      
+#         .x,
 #         address = full_address,
 #         method = "osm" #Capitalization matters!  # osm: Uses OpenStreetMap's Nominatim API, census: Good for well-formatted, U.S. addresses #ArcGIS
 #         # full_results = TRUE # Gives confidence 0-100
 #       ) %>%
-#       rename(!!sym(paste0('lat_', geo_method)) := lat, 
-#              !!sym(paste0('long_', geo_method)) := long) 
+#       rename(!!sym(paste0('lat_', geo_method)) := lat,
+#              !!sym(paste0('long_', geo_method)) := long)
 #   })
 #   return(results)
-# } 
+# }
 # 
 # texted_with_vf_info_lat_long <- add_lat_long(df_adds_to_convert, "census")
 # 
 # second_conversion_osm <- add_lat_long(texted_with_vf_info_lat_long %>% filter(is.na(lat_census)), "osm")
 # 
 # df_map_lat_long_no_NA <- left_join(
-#   texted_with_vf_info_lat_long, 
-#   second_conversion %>% select(voter_id, lat_osm, long_osm), 
+#   texted_with_vf_info_lat_long,
+#   second_conversion_osm %>% select(voter_id, lat_osm, long_osm),
 #   by = join_by(voter_id)
-#   ) %>% 
-#     mutate(lat = coalesce(lat_census, lat_osm), 
-#            long = coalesce(long_census, long_osm)) %>% 
+#   ) %>%
+#     mutate(lat = coalesce(lat_census, lat_osm),
+#            long = coalesce(long_census, long_osm)) %>%
 #     filter(!is.na(lat))
 ```
 
 ```{r}
 ## Put tagged individuals into a map
-
+# 
 # c_map <- c(
-#   "Yes"   = "green",   
-#   "Maybe" = "orange",     
-#   "No"    = "darkred",     
-#   "INFO"  = "blue"        
+#   "Yes"   = "green",
+#   "Maybe" = "orange",
+#   "No"    = "darkred",
+#   "INFO"  = "blue"
 # )
 # 
 # icons <- awesomeIcons(
@@ -152,11 +155,11 @@ texted_with_vf_info <- texted_with_vf_info %>%
 #   markerColor = unname(c_map[as.character(df_map_lat_long_no_NA$tags_reconciled)]) #Removes the name from a vector
 # )
 # 
-# map_tagged_s2w_respondents <- df_map_lat_long_no_NA %>% 
+# map_tagged_s2w_respondents <- df_map_lat_long_no_NA %>%
 #   leaflet() %>%
 #     addTiles() %>%
 #     addAwesomeMarkers(
-#       lng = ~long, 
+#       lng = ~long,
 #       lat = ~lat,
 #       icon = icons,
 #       popup = ~paste0("<b>Address:</b> ", full_address, "<br>",
@@ -188,7 +191,7 @@ pal_count <- colorNumeric("Greens", yes_tags_by_town_geo$n_indiv, na.color = "tr
 
 town_centroids <- st_centroid(yes_tags_by_town_geo)
 
-m <- leaflet(yes_tags_by_town_geo) %>%
+map_yeses_by_town <- leaflet(yes_tags_by_town_geo) %>%
   addProviderTiles("CartoDB.Positron") %>%
   
   # First layer: Number of VF Records
@@ -219,14 +222,13 @@ m <- leaflet(yes_tags_by_town_geo) %>%
     )
   )
 
-saveWidget(m, "map_yes_tags_by_town.html", selfcontained = TRUE)
+saveWidget(map_yeses_by_town, "map_yes_tags_by_town.html", selfcontained = TRUE)
 
 ```
 
 ## Mapping Yeses By Town - Circles
 
 ```{r}
-library(scales)
 df_tag_data_by_town_radius <- texted_with_vf_info %>% 
   filter(!(tags_reconciled_OPTOUTS %in% c('No_Tag'))) %>%
   group_by(tags_reconciled_OPTOUTS, town_name.y) %>%
