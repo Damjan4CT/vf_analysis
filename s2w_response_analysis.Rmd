@@ -102,41 +102,41 @@ texted_with_vf_info <- texted_with_vf_info %>%
 ####Should we include OPT OUTS here too??
 
 # Convert addresses to lat/long coordinates
-# 
-# df_adds_to_convert <- texted_with_vf_info  %>%
-#   filter(!is.na(tags_reconciled)) %>%
-#   mutate(full_address = paste(address_number, ' ', street_name, ' ', town_name.y, ', ', state, ' ', zip5 , sep = ''))
-# 
-# add_lat_long <- function(df_adds, geo_method){
-#   batch_size <- 250
-#   batches <- split(df_adds, ceiling(seq_len(nrow(df_adds)) / batch_size))
-# 
-#   results <- purrr::map_dfr(batches, ~{
-#     Sys.sleep(0.2)        # optional
-#    tidygeocoder::geocode(
-#         .x,
-#         address = full_address,
-#         method = "osm" #Capitalization matters!  # osm: Uses OpenStreetMap's Nominatim API, census: Good for well-formatted, U.S. addresses #ArcGIS
-#         # full_results = TRUE # Gives confidence 0-100
-#       ) %>%
-#       rename(!!sym(paste0('lat_', geo_method)) := lat,
-#              !!sym(paste0('long_', geo_method)) := long)
-#   })
-#   return(results)
-# }
-# 
-# texted_with_vf_info_lat_long <- add_lat_long(df_adds_to_convert, "census")
-# 
-# second_conversion_osm <- add_lat_long(texted_with_vf_info_lat_long %>% filter(is.na(lat_census)), "osm")
-# 
-# df_map_lat_long_no_NA <- left_join(
-#   texted_with_vf_info_lat_long,
-#   second_conversion_osm %>% select(voter_id, lat_osm, long_osm),
-#   by = join_by(voter_id)
-#   ) %>%
-#     mutate(lat = coalesce(lat_census, lat_osm),
-#            long = coalesce(long_census, long_osm)) %>%
-#     filter(!is.na(lat))
+
+df_adds_to_convert <- texted_with_vf_info  %>%
+  filter(!is.na(tags_reconciled)) %>%
+  mutate(full_address = paste(address_number, ' ', street_name, ' ', town_name.y, ', ', state, ' ', zip5 , sep = ''))
+
+add_lat_long <- function(df_adds, geo_method){
+  batch_size <- 250
+  batches <- split(df_adds, ceiling(seq_len(nrow(df_adds)) / batch_size))
+
+  results <- purrr::map_dfr(batches, ~{
+    Sys.sleep(0.2)        # optional
+   tidygeocoder::geocode(
+        .x,
+        address = full_address,
+        method = "osm" #Capitalization matters!  # osm: Uses OpenStreetMap's Nominatim API, census: Good for well-formatted, U.S. addresses #ArcGIS
+        # full_results = TRUE # Gives confidence 0-100
+      ) %>%
+      rename(!!sym(paste0('lat_', geo_method)) := lat,
+             !!sym(paste0('long_', geo_method)) := long)
+  })
+  return(results)
+}
+
+texted_with_vf_info_lat_long <- add_lat_long(df_adds_to_convert, "census")
+
+second_conversion_osm <- add_lat_long(texted_with_vf_info_lat_long %>% filter(is.na(lat_census)), "osm")
+
+df_map_lat_long_no_NA <- left_join(
+  texted_with_vf_info_lat_long,
+  second_conversion_osm %>% select(voter_id, lat_osm, long_osm),
+  by = join_by(voter_id)
+  ) %>%
+    mutate(lat = coalesce(lat_census, lat_osm),
+           long = coalesce(long_census, long_osm)) %>%
+    filter(!is.na(lat))
 ```
 
 ```{r}
@@ -174,6 +174,60 @@ texted_with_vf_info <- texted_with_vf_info %>%
 # 
 # saveWidget(map_tagged_s2w_respondents, "s2w_tagged_respondents_20260117.html", selfcontained = TRUE)
 ```
+
+```{r}
+lat_long_census <- function(df_adds, geo_method){
+  batch_size <- 5000
+  batches <- split(df_adds, ceiling(seq_len(nrow(df_adds)) / batch_size))
+  
+  results <- map_dfr(batches, ~{
+  Sys.sleep(0.2)        # optional
+  tidygeocoder::geocode(
+        .x,      
+        address = full_address,
+        method = geo_method,  # OSM: Uses OpenStreetMap's Nominatim API, Census: Good for well-formatted, U.S. addresses #ArcGIS
+        # full_results = TRUE # Gives confidence 0-100
+      ) %>%
+      rename(!!sym(paste0('lat_', geo_method)) := lat,
+             !!sym(paste0('long_', geo_method)) := long)
+  })
+}
+
+
+## Map for door knocking
+vf_with_s2w_tags <- vf_clean %>% left_join(texted_with_vf_info %>% select(voter_id, tags_reconciled_OPTOUTS, `Campaign Name`), join_by(voter_id))
+
+nhv_active_dem_unaff_s2w_tags <- vf_with_s2w_tags %>% 
+  filter(town_name == 'New Haven') %>% 
+  filter(party_code %in% c('D', 'U') & status == 'A') %>%
+  mutate(Tag = coalesce(tags_reconciled_OPTOUTS, 'No_Text'),
+         full_address = paste(address_number, ' ', street_name, ' ', town_name, ', ', state, ' ', zip5 , sep = '')) %>%
+  select(voter_id, name_prefix, first_name, last_name, full_address, address_number, street_name, town_name, state, zip5,
+         party_code, gender, age, frequent_voter, likely_signer, Tag, `Campaign Name`) 
+
+unique_add <- nhv_active_dem_unaff_s2w_tags %>%
+  group_by(full_address) %>%
+  summarise(n=n()) %>%
+  arrange(desc(n))
+
+
+start <- Sys.time()
+#z <- lat_long_progress(nhv_active_dem_unaff_s2w_tags %>% head(60), 'census')
+z <- lat_long_census(unique_add, "census")
+end <- Sys.time()
+end-start
+
+unique_add_geocode
+z 
+
+left_join(nhv_active_dem_unaff_s2w_tags, z, join_by(full_address)) %>% arrange(street_name, as.integer(address_number)) %>%
+  write.csv(., 'canvass_list_new_haven_act_dems_unaff_s2w_tags_geocode.csv')
+```
+
+
+
+
+
 
 ```{r}
 ## Mapping Yeses By Town (with town shapefiles)
